@@ -11,6 +11,7 @@ body {
   background-color: #fdfaf6;
   border-bottom: 2px solid;
   border-color: #bf0a30;
+  height: 155px;
 }
 
 .navbar .container {
@@ -20,6 +21,17 @@ body {
 .navbar .nav-item {
   margin-left: 15px;
   margin-right: 15px;
+}
+
+.navbar-nav {
+  position: absolute;
+  left: 50%;
+  transform: translatex(-50%);
+  top: 100px;
+}
+
+.header-navigation .form {
+  top: 80px;
 }
 
 .nav-item .nav-link {
