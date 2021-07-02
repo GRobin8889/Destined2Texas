@@ -18,6 +18,14 @@ body {
   width: 60%;
 }
 
+.navbar-nav {
+  z-index: 3;
+}
+
+form.float-end {
+  margin-top: 25px;
+}
+
 .navbar .nav-item {
   margin-left: 15px;
   margin-right: 15px;
