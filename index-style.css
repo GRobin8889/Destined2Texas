@@ -190,28 +190,25 @@ form.float-end {
 }
 
 /* Nav tab image CTA section */
-.nav-image-cta-section {
-  border-bottom: 2px solid black;
+.nav-image-cta-section .container-fluid {
+  width: 92%;
+  height: auto;
+  background-color: #DDDDDD;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 5px solid #bf0a30;
 }
 
-.nav-images {
-  margin-top: 2rem;
+.nav-image-cta-section .row {
+  text-align: center;
 }
 
-.nav-images ul {
-  list-style-type: none;
-}
-
-.nav-image-cta-section img {
-  border: 2px solid black;
-  border-radius: 20px;
-  margin-left: 50px;
-  margin-bottom: 2rem;
-}
-
-.nav-images-short {
-  float: right;
-  margin-right: 50px;
+.nav-pic {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  border: 3px solid;
+  border-color: #002868;
+  border-style: dashed;
 }
 
 /* Get In Touch Section */
