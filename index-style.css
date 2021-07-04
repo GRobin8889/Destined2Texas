@@ -281,6 +281,7 @@ form.float-end {
 .days-hours {
   margin-left: 18rem;
   margin-right: 18rem;
+  text-align: center;
 }
 
 .days-hours table {
@@ -304,6 +305,11 @@ form.float-end {
 
 #send-email:hover {
   color: #002868;
+}
+
+.current-day {
+  background-color: white;
+  color: black;
 }
 
 /* Footer link section */
