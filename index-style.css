@@ -130,6 +130,24 @@ form.float-end {
   text-align: center;
 }
 
+.carousel-item .event-1 {
+  position: absolute;
+  top: 22rem;
+  left: 1rem;
+}
+
+.carousel-item .event-2 {
+  position: absolute;
+  top: 22rem;
+  left: 25rem;
+}
+
+.carousel-item .event-3 {
+  position: absolute;
+  top: 22rem;
+  left: 25rem;
+}
+
 .tx-video-preview {
   background-color: black;
 }
@@ -158,6 +176,7 @@ form.float-end {
 /* Destination in the Spotlight section */
 .spotlight-section {
   background-color: #fdfaf6;
+  border-top: 6px solid #bf0a30;
   border-bottom: 6px solid #bf0a30;
   height: 31rem;
 }
