@@ -247,6 +247,10 @@ form.float-end {
   border-style: dashed;
 }
 
+.nav-pic:hover {
+  transform: scale(1.03);
+}
+
 /* Get In Touch Section */
 .in-touch-section {
   color: white;
