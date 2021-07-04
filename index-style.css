@@ -46,6 +46,18 @@ form.float-end {
   color: black;
 }
 
+.fa-shopping-cart {
+  position: absolute;
+  top: 5.2rem;
+  right: 30rem;
+}
+
+.fa-lock {
+  position: absolute;
+  top: 5.2rem;
+  right: 25rem;
+}
+
 /* Hero Text with Video Section */
 .hero-section {
   display: flex;
@@ -120,7 +132,7 @@ form.float-end {
 }
 
 .trends-about-section .container-fluid {
-  width: 92%;
+  width: 94%;
   height: auto;
 }
 
