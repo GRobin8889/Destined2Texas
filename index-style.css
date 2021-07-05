@@ -11,7 +11,6 @@ body {
   background-color: #fdfaf6;
   border-bottom: 2px solid;
   border-color: #bf0a30;
-  height: 160px;
 }
 
 .navbar .container-fluid {
@@ -20,14 +19,13 @@ body {
 
 .navbar-nav {
   z-index: 3;
-  position: inherit;
-  top: 100px;
   margin-left: auto;
   margin-right: auto;
 }
 
-form.float-end {
-  margin-top: 25px;
+.search {
+  position: relative;
+  top: 25px;
 }
 
 .navbar .nav-item {
@@ -35,24 +33,12 @@ form.float-end {
   margin-right: 15px;
 }
 
-.header-navigation .form {
-  top: 80px;
-}
-
 .nav-item .nav-link {
   color: black;
 }
 
-.fa-shopping-cart {
-  position: relative;
-  top: 3.2rem;
-  right: 9.5rem;
-}
-
-.fa-lock {
-  position: relative;
-  top: 3.2rem;
-  right: 7.5em;
+.cart-login {
+  text-align: right;
 }
 
 /* Hero Text with Video Section */
@@ -287,11 +273,11 @@ form.float-end {
   margin-right: auto;
 }
 
-#day {
+.day {
   text-align: left;
 }
 
-#time {
+.time {
   text-align: right;
 }
 
@@ -352,136 +338,5 @@ form.float-end {
   padding: 5px 5px;
 }
 
-/*---------------------*/
-/*----Media Queries----*/
-@media screen and (max-width: 1830px) {
-
-  /* Destination in the Spotlight section */
-  .spotlight-section img {
-    margin-top: -33px;
-  }
-}
-
-@media screen and (max-width: 1024px) {}
-
-@media screen and (max-width: 520px) {
-
-  /* Header & Navigation Section */
-  .navbar .container-fluid {
-    width: 100%;
-  }
-
-  .navbar {
-    margin-left: 4rem;
-  }
-
-  .navbar-nav {
-    z-index: 10;
-  }
-
-  form.float-end {
-    margin-top: 0.2rem;
-    margin-left: 4rem;
-  }
-
-  .fa-shopping-cart {
-    top: -6.5rem;
-    right: -3.7rem;
-  }
-
-  .fa-lock {
-    top: -4.5rem;
-    right: -0.5em;
-  }
-
-  /* Hero Text with Video Section */
-  .hero-section {
-    min-height: 400px;
-  }
-
-  .hero video {
-    height: 400px;
-  }
-
-  .hero .hero-text {
-    position: relative;
-    text-align: center;
-    z-index: 2;
-    color: #bf0a30;
-    -webkit-text-stroke: 0.5px #e1e5ea;
-  }
-
-  /* Welcome to Texas Section */
-  .slide img {
-    height: 200px;
-    width: 425px;
-  }
-
-  .tx-video-preview {
-    height: auto;
-  }
-
-  .carousel-item .event-1 {
-    top: 9rem;
-    left: 1rem;
-  }
-
-  .carousel-item .event-2, .carousel-item .event-3 {
-    top: 9rem;
-    left: 12rem;
-  }
-
-  /* Destination in the Spotlight section */
-  .spotlight-city {
-    margin-left: 2rem;
-  }
-
-  .spotlight-buttons {
-    display: none;
-  }
-
-  .spotlight-section img {
-    margin: 2rem 2rem -2rem 2rem;
-    text-align: center;
-    width: 25rem;
-  }
-
-  /* Nav tab image CTA section */
-  .nav-pic {
-    width: 25rem;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-
-  /* Get In Touch Section */
-  .in-touch-section iframe {
-    width: 25rem;
-    height: 20rem;
-  }
-
-  .map {
-    text-align: center;
-  }
-
-  /* Footer */
-  .footer {
-    padding: 10px;
-    margin: auto;
-  }
-
-  .footer-links {
-    line-height: 10px;
-    font-size: 12px;
-  }
-
-  .footer-phone-number {
-    padding-top: 10px;
-    font-size: 14px;
-  }
-
-  .contact-info {
-    text-align: center;
-  }
-
-}
+/*----------------------------------------------------------*/
+/*-----------------------Media Queries----------------------*/
