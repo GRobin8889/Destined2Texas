@@ -11,15 +11,19 @@ body {
   background-color: #fdfaf6;
   border-bottom: 2px solid;
   border-color: #bf0a30;
-  height: 155px;
+  height: 160px;
 }
 
-.navbar .container {
+.navbar .container-fluid {
   width: 60%;
 }
 
 .navbar-nav {
   z-index: 3;
+  position: inherit;
+  top: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 form.float-end {
@@ -31,13 +35,6 @@ form.float-end {
   margin-right: 15px;
 }
 
-.navbar-nav {
-  position: absolute;
-  left: 50%;
-  transform: translatex(-50%);
-  top: 100px;
-}
-
 .header-navigation .form {
   top: 80px;
 }
@@ -47,15 +44,15 @@ form.float-end {
 }
 
 .fa-shopping-cart {
-  position: absolute;
-  top: 5.2rem;
-  right: 30rem;
+  position: relative;
+  top: 3.2rem;
+  right: 9.5rem;
 }
 
 .fa-lock {
-  position: absolute;
-  top: 5.2rem;
-  right: 25rem;
+  position: relative;
+  top: 3.2rem;
+  right: 7.5em;
 }
 
 /* Hero Text with Video Section */
@@ -190,28 +187,27 @@ form.float-end {
   background-color: #fdfaf6;
   border-top: 6px solid #bf0a30;
   border-bottom: 6px solid #bf0a30;
-  height: 31rem;
+  height: auto;
 }
 
 .spotlight-section img {
   border: 2px #bf0a30;
   border-style: dashed;
   border-radius: 20px;
-  float: left;
-  margin-top: -80px;
-  margin-left: 60px;
-  margin-right: 50px;
+  margin-top: -5rem;
+  margin-left: 4rem;
+  margin-bottom: 2rem;
+}
+
+.spotlight-buttons {
+  position: relative;
+  text-align: center;
+  top: 6rem;
 }
 
 .spotlight-city {
   padding-top: 4rem;
   width: 70%
-}
-
-.spotlight-buttons {
-  float: right;
-  margin-top: -100px;
-  margin-right: 100px;
 }
 
 .spotlight-header {
@@ -353,4 +349,97 @@ form.float-end {
   text-align: center;
   margin: auto;
   padding: 5px 5px;
+}
+
+/*---------------------*/
+/*----Media Queries----*/
+@media screen and (max-width: 1830px) {
+
+  /* Destination in the Spotlight section */
+  .spotlight-section img {
+    margin-top: -33px;
+  }
+}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 520px) {
+
+  /* Header & Navigation Section */
+  .navbar .container-fluid {
+    width: 100%;
+  }
+
+  .navbar {
+    margin-left: 4rem;
+  }
+
+  .navbar-nav {
+    z-index: 10;
+  }
+
+  form.float-end {
+    margin-top: 0.2rem;
+    margin-left: 4rem;
+  }
+
+  .fa-shopping-cart {
+    top: -6.5rem;
+    right: -3.7rem;
+  }
+
+  .fa-lock {
+    top: -4.5rem;
+    right: -0.5em;
+  }
+
+  /* Hero Text with Video Section */
+  .hero-section {
+    min-height: 400px;
+  }
+
+  .hero video {
+    height: 400px;
+  }
+
+  .hero .hero-text {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    color: #bf0a30;
+    -webkit-text-stroke: 0.5px #e1e5ea;
+  }
+
+  /* Welcome to Texas Section */
+
+
+  /* Destination in the Spotlight section */
+  .spotlight-city {
+    margin-left: 2rem;
+  }
+
+  .spotlight-buttons {
+    display: none;
+  }
+
+  .spotlight-section img {
+    position: relative;
+    width: 24rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: -2rem;
+    left: 40px;
+  }
+
+  /* Nav tab image CTA section */
+  .nav-pic {
+    width: 25rem;
+  }
+
+  /* Get In Touch Section */
+  .in-touch-section iframe {
+    width: 25rem;
+    height: 20rem;
+    margin-left: 2rem;
+  }
 }
