@@ -24,16 +24,16 @@
 <body>
   <!-- Header & Navigation Section -->
   <section class="header-navigation">
-    <nav class="navbar navbar-expand-lg bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="w-100 flex-md-column">
-        <div class="container">
+        <div class="container-fluid">
           <a class="navbar-brand" href="index.html"><img src="https://images.ctfassets.net/h0xqyno1fssl/vNzVVg1nqecfumNxhineo/c6d8ada793264727755d467b674079ce/d2t-site-logo.png" alt="site-logo"></a>
           <form class="d-flex float-end">
             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
             <button class="btn btn-outline-dark" type="submit">Search</button>
+            <!-- shopping cart and customer login -->
+            <a type="button" name="button"><i class="fas fa-shopping-cart">&nbsp;Cart</i></a><span><a type="button" name="button"><i class="fas fa-lock">&nbsp;Login</i></a></span>
           </form>
-          <!-- shopping cart and customer login -->
-          <a type="button" name="button"><i class="fas fa-shopping-cart">&nbsp;Cart</i></a><span><a type="button" name="button"><i class="fas fa-lock">&nbsp;Login</i></a></span>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -72,7 +72,7 @@
               <a class="nav-link" href="brochure.html">Brochure</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="contact.html">Contact Us</a>
+              <a class="nav-link" href="contact.html">Contact</a>
             </li>
           </ul>
         </div>
@@ -151,18 +151,19 @@
   <section class="spotlight-section">
     <h2 class="spotlight-header"><i class="fas fa-star"></i>&nbsp;DESTINATION IN THE SPOTLIGHT!</h2>
     <div class="container-fluid">
-      <div>
-        <img class="shadow img-fluid" src="https://images.ctfassets.net/h0xqyno1fssl/1WqsqlCXNtcZag3do0VEwW/b67f7807c7ff542797c22bfbeeb2ff7c/spotlight-dallas.png" alt="spotlight">
-      </div>
-      <div class="spotlight-city">
-        <h3>Dallas, Texas</h3>
-        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
-          eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-      </div>
-      <div class="spotlight-buttons d-grid gap-2">
-        <a class="btn btn-danger btn-lg" href="maps.html">View Map&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
-        <a class="btn btn-info btn-lg" href="dallas.html">View Information&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a>
-        </br />
+      <div class="row">
+        <div class="col">
+          <img class="shadow" src="https://images.ctfassets.net/h0xqyno1fssl/1WqsqlCXNtcZag3do0VEwW/b67f7807c7ff542797c22bfbeeb2ff7c/spotlight-dallas.png" alt="spotlight">
+        </div>
+        <div class="col spotlight-city">
+          <h3>Dallas, Texas</h3>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque
+            eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+        </div>
+        <div class="col spotlight-buttons">
+          <p><a class="btn btn-danger btn-lg w-50" href="maps.html">View Map&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a></p>
+          <p><a class="btn btn-info btn-lg w-50" href="dallas.html">View Information&nbsp;&nbsp;<i class="fas fa-arrow-right"></i></a></p>
+        </div>
       </div>
     </div>
   </section>
