@@ -159,6 +159,7 @@ form.float-end {
 
 .tx-video-preview {
   background-color: black;
+  min-height: 420px;
 }
 
 .trend-head, .texas-videos-head {
@@ -411,7 +412,24 @@ form.float-end {
   }
 
   /* Welcome to Texas Section */
+  .slide img {
+    height: 200px;
+    width: 425px;
+  }
 
+  .tx-video-preview {
+    height: auto;
+  }
+
+  .carousel-item .event-1 {
+    top: 9rem;
+    left: 1rem;
+  }
+
+  .carousel-item .event-2, .carousel-item .event-3 {
+    top: 9rem;
+    left: 12rem;
+  }
 
   /* Destination in the Spotlight section */
   .spotlight-city {
@@ -423,23 +441,47 @@ form.float-end {
   }
 
   .spotlight-section img {
-    position: relative;
-    width: 24rem;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: -2rem;
-    left: 40px;
+    margin: 2rem 2rem -2rem 2rem;
+    text-align: center;
+    width: 25rem;
   }
 
   /* Nav tab image CTA section */
   .nav-pic {
     width: 25rem;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    text-align: center;
   }
 
   /* Get In Touch Section */
   .in-touch-section iframe {
     width: 25rem;
     height: 20rem;
-    margin-left: 2rem;
   }
+
+  .map {
+    text-align: center;
+  }
+
+  /* Footer */
+  .footer {
+    padding: 10px;
+    margin: auto;
+  }
+
+  .footer-links {
+    line-height: 10px;
+    font-size: 12px;
+  }
+
+  .footer-phone-number {
+    padding-top: 10px;
+    font-size: 14px;
+  }
+
+  .contact-info {
+    text-align: center;
+  }
+
 }
