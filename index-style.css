@@ -340,3 +340,63 @@ body {
 
 /*----------------------------------------------------------*/
 /*-----------------------Media Queries----------------------*/
+/* -----Screensize for Ipad/Tablet (1024px)----- */
+@media screen and (max-width: 1024px) {
+
+  /* Header & Navigation Section */
+  .navbar .container-fluid {
+    width: 100%;
+  }
+
+  .cart-login {
+    position: absolute;
+    top: 0;
+    right: 10px;
+  }
+
+  /* Destination in the Spotlight section */
+  .spotlight-section {
+    height: 48rem;
+  }
+
+  .spotlight-section img {
+    position: relative;
+    width: 30rem;
+    top: 8rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
+  .spotlight-buttons {
+    position: inherit;
+  }
+
+  /* Nav tab image CTA section */
+  .nav-pic {
+    width: 40rem;
+    ;
+  }
+
+  /* Get In Touch Section */
+  .in-touch-section iframe {
+    height: 36rem;
+    width: 40rem;
+  }
+
+  .days-hours table {
+    min-width: 30rem;
+  }
+
+  .map {
+    text-align: center;
+  }
+
+  /* Footer link section */
+  .footer-links {
+    font-size: 10px;
+  }
+
+  .footer-phone-number {
+    font-size: 14px;
+  }
+}
