@@ -520,12 +520,13 @@ body {
   }
 
   /* Destination in the Spotlight section */
-  .spotlight-header {
-    font-size: 30px;
-  }
-
   .spotlight-section {
     height: 53rem;
+    display: none;
+  }
+
+  .spotlight-header {
+    font-size: 30px;
   }
 
   .spotlight-section img {
