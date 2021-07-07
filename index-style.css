@@ -125,6 +125,16 @@ body {
   text-align: center;
 }
 
+.slide-pic {
+  width: 100%;
+  height: 100%;
+}
+
+.tx-video {
+  width: 100%;
+  height: 422px;
+}
+
 .carousel-item .event-1 {
   position: absolute;
   top: 22rem;
@@ -348,33 +358,77 @@ body {
     width: 100%;
   }
 
+  .navbar-nav, .navbar-nav li {
+    text-align: center;
+  }
+
   .cart-login {
     position: absolute;
     top: 0;
     right: 10px;
   }
 
+  /* Welcome to Texas Section */
+  .tx-video-preview {
+    min-height: 244px;
+  }
+
+  .slide-pic {
+    width: 44rem;
+    height: 100%;
+  }
+
+  .tx-video {
+    width: 100%;
+    height: 390px;
+  }
+
+  .carousel-item .event-1 {
+    top: 18rem;
+    left: 1rem;
+  }
+
+  .carousel-item .event-2, .carousel-item .event-3 {
+    top: 18rem;
+    left: 20rem;
+  }
+
   /* Destination in the Spotlight section */
   .spotlight-section {
-    height: 48rem;
+    height: 65rem;
   }
 
   .spotlight-section img {
     position: relative;
-    width: 30rem;
+    width: 42rem;
     top: 8rem;
     margin-left: 2rem;
     margin-right: 2rem;
   }
 
+  .spotlight-city {
+    position: relative;
+    top: 63px;
+    text-align: center;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+
   .spotlight-buttons {
-    position: inherit;
+    position: relative;
+    top: 11rem;
+  }
+
+  .spotlight-buttons .btn {
+    width: 80%;
+    margin-bottom: 1rem;
+    font-size: 24px;
+    margin-right: 2rem;
   }
 
   /* Nav tab image CTA section */
   .nav-pic {
     width: 40rem;
-    ;
   }
 
   /* Get In Touch Section */
@@ -398,5 +452,140 @@ body {
 
   .footer-phone-number {
     font-size: 14px;
+  }
+}
+
+/* -----Screensize for Mobile Phones (520px)----- */
+@media screen and (max-width: 520px) {
+
+  /* Header & Navigation Section */
+  .navbar-nav, .navbar-nav li {
+    text-align: center;
+  }
+
+  .navbar .container-fluid {
+    height: 132px;
+  }
+
+  .search {
+    position: absolute;
+    top: 6rem;
+    left: 3rem;
+  }
+
+  /* Hero Text with Video Section */
+  .hero-section, .hero video {
+    min-height: 300px;
+  }
+
+  .hero video {
+    height: 300px;
+  }
+
+  .catch-phrase-one {
+    font-size: 43px;
+  }
+
+  .catch-phrase-two {
+    font-size: 23px;
+  }
+
+  /* Welcome to Texas Section */
+  .welcome-header {
+    font-size: 32px;
+  }
+
+  .tx-video-preview {
+    min-height: 244px;
+  }
+
+  .slide-pic {
+    width: 20.5rem;
+    height: 100%;
+  }
+
+  .tx-video {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .carousel-item .event-1 {
+    top: 6.5rem;
+    left: 0.5rem;
+  }
+
+  .carousel-item .event-2, .carousel-item .event-3 {
+    top: 6.5rem;
+    left: 10rem;
+  }
+
+  /* Destination in the Spotlight section */
+  .spotlight-header {
+    font-size: 30px;
+  }
+
+  .spotlight-section {
+    height: 53rem;
+  }
+
+  .spotlight-section img {
+    width: 22rem;
+    margin-top: -6rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .spotlight-city {
+    position: relative;
+    top: 63px;
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+
+  .spotlight-buttons {
+    display: flex;
+    position: relative;
+    top: 6rem;
+  }
+
+  .spotlight-buttons .btn {
+    position: relative;
+    width: 90%;
+    margin-bottom: 1rem;
+    font-size: 14px;
+    left: 1rem;
+  }
+
+  /* Nav tab image CTA section */
+  .nav-pic {
+    width: 18rem;
+  }
+
+  /* Get In Touch Section */
+  .in-touch-section iframe {
+    height: 25rem;
+    width: 20rem;
+  }
+
+  .days-hours table {
+    min-width: 20rem;
+  }
+
+  /* Footer link section */
+  .footer-link-section h4 {
+    margin-top: 10px;
+  }
+
+  .footer {
+    padding: inherit;
+  }
+
+  .footer-links {
+    line-height: 1px;
+  }
+
+  .contact-info, .footer-links {
+    text-align: center;
   }
 }
