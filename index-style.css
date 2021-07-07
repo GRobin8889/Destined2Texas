@@ -456,7 +456,7 @@ body {
 }
 
 /* -----Screensize for Mobile Phones (520px)----- */
-@media screen and (max-width: 520px) {
+@media screen and (min-width: 370px) and (max-width: 520px) {
 
   /* Header & Navigation Section */
   .navbar-nav, .navbar-nav li {
