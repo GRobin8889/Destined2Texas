@@ -1,5 +1,6 @@
 'use strict';
 
+//------------------Index.html JavaScript------------------//
 ///////// Send Us An Email" Button Modal Functionality ////////////
 // Get the location Modal
 var modal = document.getElementById("email-modal");
@@ -27,7 +28,6 @@ window.onclick = function(event) {
   }
 }
 
-//------------------Index.html JavaScript------------------//
 //---Contact Us Section---//
 ///////// Automatically Highlight Day of the Week in 'in-touch-section' ////////////
 let day = new Date();
