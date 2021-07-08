@@ -244,7 +244,58 @@
                 <p>&nbsp;</p>
                 <!-- Button trigger/open modal -->
                 <div class="send-email">
-                  <a type="button" class="btn btn-link"><u>Send Us An Email!</u></a></td>
+                  <a type="button" class="btn btn-link" id="cta-send"><u>Send Us An Email!</u></a></td>
+                </div>
+                <!-- Modal -->
+                <div class="modal" id="email-modal">
+                  <!-- Modal content -->
+                  <div class="modal-content" id="modal-content-width">
+                    <div class="modal-header">
+                      <h3>Send Us An Email!</h3>
+                      <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                      <h5 class="form-head"><u>Let Us Help You Explore Texas!</u></h5>
+                      <form class="row g-3 form-container">
+                        <div>
+                          <div class="row">
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                            </div>
+                            <div class="col">
+                              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                            </div>
+                          </div>
+                        </div>
+                        <div>
+                          <label for="inputEmail4" class="form-label">Email</label>
+                          <input type="email" class="form-control" id="inputEmail4">
+                        </div>
+                        <div class="">
+                          <select class="form-select" aria-label="Default select example">
+                            <option selected>*Select Inquiry</option>
+                            <option value="1">Learn About Services</option>
+                            <option value="2">Book Hotel</option>
+                            <option value="3">Order Brochure</option>
+                            <option value="4">Food Suggestions</option>
+                            <option value="5">Events Happening</option>
+                          </select>
+                        </div>
+                        <div class="form-floating">
+                          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                          <label for="floatingTextarea">Enter Comments Here</label>
+                        </div>
+                        <div class="col-12">
+                          <button type="submit" class="btn btn-danger btn-lg">Send Email</button>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <div class="modal-site-logo">
+                        <img src="https://images.ctfassets.net/h0xqyno1fssl/vNzVVg1nqecfumNxhineo/c6d8ada793264727755d467b674079ce/d2t-site-logo.png" alt="site-logo">
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
