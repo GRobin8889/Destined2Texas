@@ -1,3 +1,11 @@
+ul {
+  list-style-type: none;
+}
+
+hr {
+  background-color: red;
+}
+
 /* Hero Text with Video Section */
 .welcome-video {
   display: flex;
@@ -36,10 +44,50 @@
 .visit-city {
   font-size: 60px;
 }
+
 /* City Details section */
-.city-details{
+.city-details {
   background-color: white;
-  border: 2px solid;
-  width: 75%;
+  width: 100%;
   height: auto;
+}
+
+.more-info {
+  color: white;
+  text-align: center;
+  border: 2px solid;
+  border-color: #bf0a30;
+  background-color: #0A1931;
+}
+
+.more-info-header {
+  margin-top: 1rem;
+}
+
+.more-info .btn-lg {
+  margin-top: 5rem;
+}
+
+.info-links a {
+  margin-bottom: 3rem;
+  color: white;
+}
+
+.explore-city-img {
+  float: left;
+  margin: 30px 30px 10px 15px;
+  border: 2px solid black;
+  border-radius: 30px;
+}
+
+.city-text {
+  padding-top: 22px;
+  padding-bottom: 10px;
+}
+
+.social-icons a {
+  font-size: 36px;
+  color: white;
+  padding-left: 15px;
+  padding-right: 15px;
 }
