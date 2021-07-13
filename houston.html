@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Houston | Destined2Texas</title>
+  <!-- My Stylesheets -->
+  <link rel="stylesheet" href="css\index-style.css">
+  <link rel="stylesheet" href="css\explore-cities-style.css">
+  <!--favicon-->
+  <link rel="apple-touch-icon" sizes="180x180" href="https://images.ctfassets.net/h0xqyno1fssl/7pJdh82KiwI4vl2XsfwFFn/e3e0e6308bd97a2a1e3a851eff5b94d9/d2t-favicon-180x180.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://images.ctfassets.net/h0xqyno1fssl/5IyIKe8dTrWT2QfpLRL9za/0a38b46d0dfb1f62fc60aa20631d4155/d2t-favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://images.ctfassets.net/h0xqyno1fssl/5DBFPpQ0azJfdekrMYhM2C/f61c1cd34cfc052bd3164581e9acee99/d2t-favicon-16x16.png">
+  <link rel="manifest" href="/site.webmanifest">
+  <!--Bootstrap Stylesheets-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
+  <!--Bootstrap JavaScript-->
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js?cdv=40" type="text/javascript"></script>
+  <!--Font Awesome JavaScript-->
+  <script src="https://kit.fontawesome.com/73509f5c4c.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- Header & Navigation Section -->
+  <section class="header-navigation">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="w-100 flex-md-column">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img src="https://images.ctfassets.net/h0xqyno1fssl/vNzVVg1nqecfumNxhineo/c6d8ada793264727755d467b674079ce/d2t-site-logo.png" alt="site-logo"></a>
+          <form class="d-flex float-end search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-dark" type="submit">Search</button>
+          </form>
+          <!-- shopping cart and customer login -->
+          <p class="cart-login"><a type="button" name="button"><i class="fas fa-shopping-cart">&nbsp;Cart</i></a>&nbsp;&nbsp;<a type="button" name="button"><i class="fas fa-lock">&nbsp;Login</i></a></p>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </div>
+        <!-- Top navigation links/tabs -->
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html"><i class="fas fa-home"></i></a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                Explore Cities
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="austin.html">Austin</a></li>
+                <li><a class="dropdown-item" href="dallas.html">Dallas</a></li>
+                <li><a class="dropdown-item" href="fort-worth.html">Fort Worth</a></li>
+                <li><a class="dropdown-item" href="houston.html">Houston</a></li>
+                <li><a class="dropdown-item" href="san-antonio.html">San Antonio</a></li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="attractions.html">Attractions</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="food.html">Food</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="lodging.html">Lodging</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="maps.html">Maps</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="brochure.html">Brochure</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </section>
+  <!--Hero text with Video Section-->
+  <section class="hero welcome-video" id="video">
+    <div class="container-fluid">
+      <div class="col-12">
+        <div class="video-text">
+          <h1 class="visit-city">Visit Houston, Texas!</h1>
+        </div>
+      </div>
+    </div><!-- .container-->
+    <video width="1920" height="600" class="d-lg-block" autoplay loop muted>
+      <source src="https://videos.ctfassets.net/h0xqyno1fssl/4VoxuRtS5F0tRJhmJl7xVG/b2a9376b6710baf0f6ed11a07113afee/videoblocks-aerial-of-downtown-houston-texas_hzrxu8mam_1080__D.mp4" type="video/mp4">
+    </video>
+  </section>
+  <!-- City Details Section -->
+  <section class="city-details">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-9 city">
+          <img class="shadow-sm explore-city-img" src="https://images.ctfassets.net/h0xqyno1fssl/zYzXyBSG9vCgZ3k1RA0IG/651705e439dbf1b2cfe1781b67211dc3/explore-houston-photo.png" alt="City of Houston Photo">
+          <p class="city-text">Lorem ipsum dolor sit amet dolor blandit turpis dictumst iaculis curabitur quam eros vehicula lacinia porttitor ut conubia iaculis scelerisque blandit per placerat duis class hac eu arcu tincidunt euismod ultricies
+            sapien
+            mattis gravida molestie mattis dictumst aenean vitae feugiat erat molestie nostra posuere luctus leo in nullam venenatis laoreet consequat senectus ultricies enim quisque tincidunt class sagittis a quisque netus lacinia tempus fames
+            inceptos
+            maecenas maecenas consequat elementum eleifend commodo curabitur venenatis cubilia gravida ligula nulla platea quisque lacinia dictum donec augue ac fringilla proin ullamcorper viverra curae dui pulvinar sagittis erat quam tristique eget
+            massa semper nisi facilisis nam cras velit conubia tristique posuere libero luctus eu ad pulvinar duis aptent integer eleifend malesuada sagittis est convallis orci torquent bibendum eros gravida primis dictumst erat varius euismod
+            maecenas
+            habitasse netus quis felis metus neque aenean bibendum vulputate aptent faucibus arcu varius pharetra aenean donec tincidunt sagittis bibendum libero accumsan consequat mauris blandit gravida rutrum tempus ultrices iaculis libero non eu
+            sagittis nec pharetra turpis habitant molestie duis in neque per arcu mollis urna magna molestie aliquam aenean habitant bibendum primis risus adipiscing mauris sollicitudin diam turpis proin suscipit metus metus erat eget interdum lectus
+            dictumst posuere odio mattis sodales cubilia tristique posuere libero luctus eu ad pulvinar duis aptent integer eleifend malesuada sagittis est convallis orci torquent bibendum eros gravida primis dictumst erat varius euismod maecenas
+            habitasse netus quis felis metus neque aenean bibendum vulputate aptent faucibus arcu varius pharetra aenean donec tincidunt sagittis bibendum libero accumsan consequat mauris blandit gravida rutrum tempus ultrices iaculis libero non eu
+            sagittis nec pharetra turpis habitant molestie tristique posuere libero luctus eu ad pulvinar duis aptent integer eleifend malesuada sagittis est convallis orci torquent bibendum eros gravida primis dictumst erat varius euismod maecenas
+            habitasse netus quis felis metus neque aenean bibendum vulputate aptent faucibus arcu varius pharetra aenean donec tincidunt sagittis bibendum libero accumsan consequat mauris blandit gravida rutrum tempus ultrices iaculis libero non eu
+            sagittis nec pharetra turpis habitant molestie.</p>
+        </div>
+        <div class="col more-info">
+          <h1 class="more-info-header">More Info</h1>
+          <div class="info-links">
+            <p><a href="houston-attractions.html">Attractions in Houston</a></p>
+            <p><a href="houston-food.html">Food in Houston</a></p>
+            <p><a href="houston-lodging.html">Lodging in Houston</a></p>
+          </div>
+          <hr size="10">
+          <div class="social-icons">
+            <a href="https://www.facebook.com/Gregory3D" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.linkedin.com/in/greg-robinson-22ba8015/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://trailblazer.me/id/greg889" target="_blank"><i class="fas fa-cloud"></i></a>
+          </div>
+          <hr size="10">
+          <button class="btn-lg btn-danger w-75" type="submit">Order D2T Brochure</button>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Information Section -->
+  <section class="contact-section">
+    <div class="container-fluid">
+      <h1 class="contact-header">Contact Information</h1>
+      <div class="row">
+        <div class="col map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d886188.2409216223!2d-95.96174953501654!3d29.815995387800758!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8640b8b4488d8501%3A0xca0d02def365053b!2sHouston%2C%20TX!5e0!3m2!1sen!2sus!4v1626143330168!5m2!1sen!2sus"
+            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="col visit-contact">
+          <h3>Visit Houston, Texas</h3>
+          <p>701 Avenida de las Americas<br />
+            Houston, Texas 77010<br />
+            (713) 853-8100<br />
+            <a href="https://www.visithoustontexas.com/" target="_blank">https://www.visithoustontexas.com/</a>
+          </p>
+        </div>
+        <div class="col more-info-quicklinks">
+          <h3>More Info</h3>
+          <p><a href="houston-attractions.html">Attractions in Houston</a></p>
+          <p><a href="houston-food.html">Food in Houston</a></p>
+          <p><a href="houston-lodging.html">Lodging in Houston</a></p>
+        </div>
+        <div class="col visit">
+          <a href="https://www.visithoustontexas.com/" target="_blank"><img class="visit-cta-img" src="https://images.ctfassets.net/h0xqyno1fssl/2BAXOrttvVM0u6qxRj9mJw/c0ba4a8b0c5fef04d7fc433939d48488/explore-cities-visit-cta-houston.png"
+              alt="visit houston"></a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Footer link section -->
+  <footer class="footer-link-section">
+    <div class="container-fluid">
+      <div class="row footer">
+        <div class="col footer-links">
+          <h4>Search</h4>
+          <p><a href="explore-cities.html">Explore Cities</a></p>
+          <p><a href="attractions.html">Attractions</a></p>
+          <p><a href="food.html">Food</a></p>
+          <p><a href="lodging.html">Lodging</a></p>
+          <p><a href="maps.html">Maps</a></p>
+          <p><a href="brochure.html">Order D2T Brochure</a></p>
+        </div>
+        <div class="col footer-links">
+          <h4>Connect</h4>
+          <p><a href="https://www.linkedin.com/in/greg-robinson-22ba8015/" target="_blank">LinkedIn</a></p>
+          <p><a href="https://www.facebook.com/Gregory3D" target="_blank">Facebook</a></p>
+          <p><a href="https://trailblazer.me/id/greg889" target="_blank">Salesforce Trailhead</a></p>
+        </div>
+        <div class="col footer-links">
+          <h4>About</h4>
+          <p><a href="about.html">About Us</a></p>
+          <p><a href="contact.html">Contact Us</a></p>
+        </div>
+        <div class="col footer-links contact-info">
+          <h4>Contact Information</h4>
+          <p>1989 Millennial Dr.</p>
+          <p>Allen, TX 75002</p>
+          <p>United States</p>
+          <p class="footer-phone-number"><strong>1-800-555-5555</strong></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Copyright -->
+  <p class="copyright-text">Copyright © 2021 Destined2Texas.com. Destined2Texas.com logo and related marks are registered trademarks of Destined2Texas.com.</p>
+
+  <!-- My JavaScript -->
+  <script src="main.js"></script>
+</body>
+
+</html>
