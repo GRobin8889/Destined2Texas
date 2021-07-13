@@ -15,7 +15,6 @@ hr {
   -ms-flex-align: center;
   align-items: center;
   min-height: 600px;
-  border-bottom: 2px solid #002868;
   background-color: white;
 }
 
@@ -52,12 +51,17 @@ hr {
   height: auto;
 }
 
+.city {
+  border-top: 2px solid #002868;
+  border-bottom: 2px solid black;
+}
+
 .more-info {
   color: white;
   text-align: center;
-  border: 2px solid;
+  border: 4px solid;
   border-color: #bf0a30;
-  background-color: #0A1931;
+  background-color: #002868;
 }
 
 .more-info-header {
@@ -90,4 +94,45 @@ hr {
   color: white;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+/* Contact Information Section */
+.contact-section {
+  background-color: #bf0a30;
+  border-bottom: 2px solid;
+}
+
+.contact-header {
+  position: relative;
+  color: white;
+  padding-left: 1.2rem;
+  padding-top: 1rem;
+}
+
+.contact-section iframe {
+  width: 600px;
+  height: 450px;
+  margin: 1.5rem 1.5rem 5rem 1.5rem;
+}
+
+.visit-contact, .visit-contact a, .more-info-quicklinks, .more-info-quicklinks a {
+  color: white;
+}
+
+.visit-contact {
+  position: relative;
+  top: 110px;
+}
+
+.more-info-quicklinks {
+  position: relative;
+  line-height: 1.5rem;
+  top: 110px;
+}
+
+.visit-cta-img {
+  position: relative;
+  border-radius: 50px;
+  border: 2px solid black;
+  top: 110px;
 }
