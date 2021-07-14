@@ -136,3 +136,139 @@ hr {
   border: 2px solid black;
   top: 110px;
 }
+
+/*----------------------------------------------------------*/
+/*-----------------------Media Queries----------------------*/
+/* -----Screensize for Ipad/Tablet (1024px)----- */
+@media screen and (max-width: 1024px) {
+
+  /* Hero Text with Video Section */
+  .welcome-video {
+    min-height: 400px;
+  }
+
+  .hero video {
+    height: 400px;
+  }
+
+  /* City Details Section (truncates words)*/
+  .city-text {
+    width: 525px;
+    /**Major Properties**/
+    max-height: 7rem;
+    -webkit-box-orient: vertical;
+    display: block;
+    display: -webkit-box;
+    overflow: hidden !important;
+    text-overflow: ellipsis;
+    -webkit-line-clamp: 4;
+  }
+
+  .more-info .btn-lg {
+    font-size: 18px;
+  }
+
+  .social-icons a {
+    font-size: 24px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  /* Contact Information Section */
+  .contact-section {
+    height: 850px;
+  }
+
+  .contact-header {
+    text-align: center;
+  }
+
+  .visit-contact, .more-info-quicklinks, .visit-cta-img {
+    margin-left: 6.5rem;
+    margin-right: 10rem;
+    top: -60px;
+  }
+
+  .visit-contact p, .more-info-quicklinks a {
+    font-size: 12px;
+  }
+
+  .more-info-quicklinks {
+    line-height: 0.5rem;
+  }
+
+  .visit-cta-img {
+    position: relative;
+    top: -16.5rem;
+    left: 14rem;
+  }
+}
+
+/* -----Screensize for Mobile Phones (min 370px and max 520px)----- */
+@media screen and (min-width: 370px) and (max-width: 520px) {
+
+  /* Hero Text with Video Section */
+  .welcome-video {
+    min-height: 300px;
+  }
+
+  .hero video {
+    height: 300px;
+    border-bottom: 2px solid #002868;
+  }
+
+  .visit-city {
+    font-size: 28px;
+  }
+
+  /* City Details Section */
+  .explore-city-img {
+    width: 320px;
+  }
+
+  .city-text {
+    width: 320px;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+  }
+
+  .city {
+    border: none;
+  }
+
+  .more-info .btn-lg {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  /* Contact Information Section */
+  .contact-section {
+    height: 725px;
+  }
+
+  .contact-header {
+    padding-left: 0;
+  }
+
+  .contact-section iframe {
+    width: 300px;
+    height: 350px
+  }
+
+  .visit-contact, .more-info-quicklinks, .visit-cta-img {
+    margin-right: 1rem;
+    left: -5rem;
+  }
+
+  .visit-contact p, .more-info-quicklinks a {
+    font-size: 11px;
+  }
+
+  .visit-cta-img {
+    width: 185px;
+    top: -11rem;
+    left: 3rem;
+  }
+}
