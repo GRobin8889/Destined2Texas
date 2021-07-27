@@ -228,14 +228,14 @@ hr {
 
   /* City Selection Section */
   .city-section .city-preview-img {
-    height: 239px;
-    width: auto;
+    height: 40%;
     margin-left: -1rem;
     margin-right: -1rem;
   }
 
   .city-section .city-name {
-    margin-top: 2rem;
+    position: relative;
+    margin-top: -18rem;
   }
 
   .city-section .city-description {
