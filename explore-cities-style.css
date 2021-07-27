@@ -228,10 +228,10 @@ hr {
 
   /* City Selection Section */
   .city-section .city-preview-img {
-    height: auto;
-    width: 238px;
-    margin-left: auto;
-    margin-right: auto;
+    height: 239px;
+    width: auto;
+    margin-left: -1rem;
+    margin-right: -1rem;
   }
 
   .city-section .city-name {
