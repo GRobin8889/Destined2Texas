@@ -1,0 +1,71 @@
+body {
+  opacity: 0.9;
+  background-size: 20px 20px;
+  background-image: none;
+  background-attachment: fixed;
+}
+
+/* ----------------------------------------- */
+/* ---------Maps Page-------- */
+/* Page Header Section */
+.body-header-section .container-fluid {
+  background-color: #002868;
+  border-bottom: 2px solid #bf0a30;
+}
+
+.body-header-section .head {
+  text-align: center;
+  padding: 3rem;
+  color: white;
+}
+
+/* City Maps Iframe Section */
+.city-map {
+  margin-bottom: -100px;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.name-text {
+  font-size: 48px;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px #bf0a30;
+}
+
+.map-name {
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #002868;
+  color: white;
+  width: 450px;
+  top: -13rem;
+}
+
+.red-line-spacer {
+  height: 20px;
+  background-color: #bf0a30;
+  margin-left: -12px;
+  margin-right: -12px;
+  margin-bottom: -10px;
+}
+
+/*-----------------------Media Queries----------------------*/
+/* -----Screensize for Ipad/Tablet (1024px)----- */
+@media screen and (max-width: 1024px) {
+
+  /* City Maps Iframe Section */
+  .city-map {
+    margin-bottom: -75px;
+  }
+
+  .name-text {
+    font-size: 32px;
+  }
+
+  .map-name {
+    width: 315px;
+    top: -11.7rem;
+  }
+}
