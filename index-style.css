@@ -15,12 +15,15 @@ body {
 
 .navbar .container-fluid {
   width: 60%;
+  height: 6.2rem;
 }
 
 .navbar-nav {
+  position: relative;
   z-index: 3;
   margin-left: auto;
   margin-right: auto;
+  top: 2px;
 }
 
 .search {
@@ -38,7 +41,9 @@ body {
 }
 
 .cart-login {
+  position: relative;
   text-align: right;
+  top: -25px;
 }
 
 /* Hero Text with Video Section */
