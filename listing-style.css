@@ -46,6 +46,19 @@ body {
   padding: 60px 24px 0;
 }
 
+.filter-text-host {
+  visibility: hidden;
+  position: relative;
+}
+
+.filter-text-host::after {
+  visibility: visible;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: '2 nights | 5 Aug - 8 Aug | 2 guests';
+}
+
 .list-header {
   margin-top: -2px;
   font-size: 40px;
@@ -129,7 +142,7 @@ body {
 
 .listing-image-host::before {
   position: absolute;
-  content: '3 Rooms Left';
+  content: 'Great Deal!';
   background: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
   border-radius: 4px;
