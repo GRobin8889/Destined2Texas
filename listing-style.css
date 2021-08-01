@@ -38,6 +38,7 @@ body {
 /* Listing Details Container */
 .listing-section {
   position: relative;
+  border-bottom: 2px solid black;
 }
 
 .listings-main {
