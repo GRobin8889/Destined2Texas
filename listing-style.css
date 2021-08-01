@@ -34,6 +34,273 @@ body {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.18);
 }
 
+/* -----Listing and Map Section----- */
+/* Listing Details Container */
+.listing-section {
+  position: relative;
+}
+
+.listings-main {
+  min-height: calc(100vh - 80px);
+  width: 840px;
+  padding: 60px 24px 0;
+}
+
+.list-header {
+  margin-top: -2px;
+  font-size: 40px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.listings-filters {
+  padding-top: 15px;
+}
+
+.listings-scarcity {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.listings-scarcity span {
+  font-family: 'Circular Bold';
+  padding-bottom: 15px;
+}
+
+.fa-calendar-alt {
+  font-size: 18px;
+  padding-right: 6px;
+  color: #bf0a30;
+}
+
+.listings-filters .btn {
+  border: 1px solid rgb(176, 176, 176);
+  background: transparent;
+  border-radius: 30px;
+  margin-right: 6px;
+}
+
+.listings-filters .btn:hover {
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.18);
+  border-color: black;
+}
+
+.listings-items {
+  border-top: 1px solid #ebebeb;
+  padding: 24px 0;
+  display: flex;
+}
+
+.listings-items .listings-image:hover button {
+  opacity: 0.6;
+}
+
+.listings-image {
+  margin-top: 5px;
+  position: relative;
+}
+
+.listings-image img {
+  height: 200px !important;
+  width: 300px !important;
+  border: 1px solid rgb(176, 176, 176);
+  border-radius: 20px;
+}
+
+.listings-image button {
+  position: absolute;
+  top: 50%;
+  width: 32px;
+  height: 32px;
+  background-color: white;
+  border-radius: 50%;
+  overflow: hidden;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  opacity: 0;
+  transition: 0.2s;
+}
+
+.listing-image-host::before {
+  position: absolute;
+  content: '3 Rooms Left';
+  background: white;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+  padding: 4px 8px;
+  top: 10px;
+  left: 10px;
+  letter-spacing: 0.48px;
+  font-size: 12px;
+  font-family: 'Circular Medium';
+  text-transform: uppercase;
+}
+
+.left-img-btn {
+  left: 10px;
+}
+
+.right-img-btn {
+  right: 10px;
+}
+
+.listings-content {
+  width: calc(100% - 300px);
+  padding-left: 15px;
+  display: flex;
+  flex-direction: column;
+}
+
+.type-text {
+  font-size: 14px;
+  line-height: 18px;
+  color: gray;
+  font-family: 'Circular Light';
+}
+
+.listings-title {
+  display: flex;
+  justify-content: space-between;
+}
+
+.listings-title-icon button {
+  background: none;
+  border: none;
+  outline: none;
+  position: relative;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.listings-icon-text h2 {
+  font-size: 24px;
+  margin: 5px 0 15px;
+  font-family: 'Circular Medium';
+  font-weight: lighter;
+}
+
+.listings-title-icon button::after {
+  opacity: 0;
+  background-color: #865439;
+  position: absolute;
+  content: '';
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.listings-title-icon button:hover::after {
+  opacity: 0.08;
+}
+
+.fa-heart {
+  font-size: 20px;
+}
+
+.separator {
+  width: 32px;
+  height: 1px;
+  color: #ebebeb;
+  background: lightgray;
+}
+
+.listings-description {
+  padding-top: 15px;
+}
+
+.listings-description span {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.listings-details {
+  display: flex;
+  justify-content: space-between;
+  margin-top: auto;
+}
+
+.fa-star {
+  color: red;
+  font-size: 14px;
+  padding-right: 6px;
+}
+
+.listings-ratings {
+  align-self: flex-end;
+}
+
+.listings-ratings a {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+  font-family: 'Circular Book';
+}
+
+.listings-ratings a:hover {
+  color: black;
+}
+
+.listings-price {
+  text-align: right;
+  display: flex;
+  flex-direction: column;
+  line-height: 18px;
+}
+
+.listings-starting-price {
+  font-size: 18px;
+  font-family: 'Circular';
+  font-weight: bold;
+}
+
+.listings-starting-price span {
+  font-weight: normal;
+}
+
+.listings-total-price {
+  font-family: 'Circular';
+  font-size: 14px;
+  color: gray;
+  text-decoration: underline;
+}
+
+.pagination {
+  margin-bottom: 0;
+  padding-bottom: 18px;
+}
+
+/* Map Container */
+.listings-map {
+  width: calc(100% - 840px);
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+.main-googleMap {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  top: 0;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
 /*-----------------------Media Queries----------------------*/
 /* -----Screensize for Ipad/Tablet (1024px)----- */
 @media screen and (max-width: 1024px) {}
