@@ -25,6 +25,14 @@ body {
   align-items: center;
 }
 
+#fixed-filter {
+  background-color: white;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
 .filter-head {
   margin-left: auto;
   margin-right: auto;
@@ -32,6 +40,10 @@ body {
 
 .btn-group:hover {
   box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.18);
+}
+
+.filter-head .btn {
+  border-radius: 0;
 }
 
 /* -----Listing and Map Section----- */
@@ -45,6 +57,7 @@ body {
   min-height: calc(100vh - 80px);
   width: 840px;
   padding: 60px 24px 0;
+  border-right: 1.5px solid lightgray;
 }
 
 .filter-text-host {
@@ -118,8 +131,8 @@ body {
 }
 
 .listings-image img {
-  height: 200px !important;
-  width: 300px !important;
+  height: 200px;
+  width: 300px;
   border: 1px solid rgb(176, 176, 176);
   border-radius: 20px;
 }
@@ -310,14 +323,69 @@ body {
   top: 0;
 }
 
-#map {
+#map-lodge {
   height: 100%;
   width: 100%;
 }
 
 /*-----------------------Media Queries----------------------*/
 /* -----Screensize for Ipad/Tablet (1024px)----- */
-@media screen and (max-width: 1024px) {}
+@media screen and (max-width: 1024px) {
+  #map-lodge {
+    visibility: hidden;
+  }
+
+  /* Listing Details Container */
+  .listings-main {
+    width: 768px;
+    border-right: none;
+  }
+}
 
 /* -----Screensize for Mobile Phones (min 370px and max 520px)----- */
-@media screen and (min-width: 370px) and (max-width: 520px) {}
+@media screen and (min-width: 370px) and (max-width: 520px) {
+  #map-lodge {
+    visibility: hidden;
+  }
+
+  /* Filter Header Section */
+  .filter-header-section {
+    height: 60px;
+    padding: 0;
+  }
+
+  .filter-text-host {
+    display: flex;
+  }
+
+  .list-header {
+    text-align: center;
+  }
+
+  #fixed-filter {
+    position: relative;
+  }
+
+  /* Listing and Map Section */
+  .listings-main {
+    width: 370px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .listings-items {
+    display: block;
+  }
+
+  .listings-image  {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .listings-content {
+    width: 90%;
+    padding: 0;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
