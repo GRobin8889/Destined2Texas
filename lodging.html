@@ -91,10 +91,21 @@
     </div>
   </section>
   <!-- Filter Header Section -->
-  <section class="filter-header-section shadow">
+  <section class="filter-header-section shadow" id="fixed-filter">
     <header class="filter-head">
-      <div class="btn-group" role="group" aria-label="Basic outlined example">
-        <button type="button" class="btn btn-outline-dark">Map Texas City</button>
+      <div type="button" class="btn-group" role="group" aria-label="Basic outlined example">
+        <div class="dropdown">
+          <button class="btn btn-outline-dark dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+            Map Texas City
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <li><a class="dropdown-item" href="#">Austin, Texas</a></li>
+            <li><a class="dropdown-item" href="#">Dallas, Texas</a></li>
+            <li><a class="dropdown-item" href="#">Fort Worth, Texas</a></li>
+            <li><a class="dropdown-item" href="#">Houston, Texas</a></li>
+            <li><a class="dropdown-item" href="#">San Antonio, Texas</a></li>
+          </ul>
+        </div>
         <button type="button" class="btn btn-outline-dark">5 Aug - 8 Aug</button>
         <button type="button" class="btn btn-outline-dark d-flex">2 Guests</button>
         <button type="button" class="btn btn-danger btn-outline-dark d-flex"><i class="fas fa-search"></i></button>
@@ -1018,7 +1029,7 @@
     <!-- Map Container -->
     <div class="listings-map">
       <div class="main-googleMap">
-        <div id="map"></div>
+        <div id="map-lodge"></div>
       </div>
   </section>
   <!-- Footer link section -->
