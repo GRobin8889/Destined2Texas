@@ -91,16 +91,247 @@
     </div>
   </section>
   <!-- Filter Header Section -->
-  <section class="filter-header-section">
+  <section class="filter-header-section shadow" id="fixed-filter">
     <header class="filter-head">
       <div class="btn-group" role="group" aria-label="Basic outlined example">
-        <button type="button" class="btn btn-outline-dark">Map Texas City</button>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Map Texas City
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li><a class="dropdown-item" href="#">Austin, Texas</a></li>
+            <li><a class="dropdown-item" href="#">Dallas, Texas</a></li>
+            <li><a class="dropdown-item" href="#">Fort Worth, Texas</a></li>
+            <li><a class="dropdown-item" href="#">Houston, Texas</a></li>
+            <li><a class="dropdown-item" href="#">San Antonio, Texas</a></li>
+          </ul>
+        </div>
         <button type="button" class="btn btn-outline-dark">Types of Food</button>
         <button type="button" class="btn btn-danger btn-outline-dark d-flex"><i class="fas fa-search"></i></button>
       </div>
     </header>
   </section>
-
+  <!-- Listing and Map Section -->
+  <section class="listing-section">
+    <div class="listings-main">
+      <span class="filter-text-host-food">City | All Food Types</span>
+      <h1 class="list-header">Food in Selected City</h1>
+      <div class="listings-filters">
+        <button type="button" class="btn btn-sm">Price</button>
+        <button type="button" class="btn btn-sm">More Filters</button>
+      </div>
+      <div class="listings-scarcity">
+        <p><i class="fas fa-hamburger"></i></p>
+        <span>
+          View each food listing by clicking on their website link provided with their listing.
+        </span>
+      </div>
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-1">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/6vtpG3JON8UBQFmXHEursn/31abc1058ba3f417891aa051fb74b43c/royal38-food-dallas-01-preview.png" alt="Food Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Food in Dallas, Texas</span>
+              <h2 id="lorenzo-dallas">Royal 38</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">American(New) · Cocktail Bars</span>
+            <span class="type-text">Happy hour specials · Takes reservations</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="#"><i class="fas fa-star"></i><span><b>4.00</b> <span class="type-text">(90 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="https://www.royal38.bar/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-1">
+        <div class="listings-image listing-image-host2">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/39uBCsnIKdgjZUkbMQE1ti/61be94ddf33984af2c936e26e9a7e76a/haywire-food-dallas-01-preview.png" alt="Food Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Food in Dallas, Texas</span>
+              <h2 id="lorenzo-dallas">Haywire</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">American(New) · Bars</span>
+            <span class="type-text">Breakfast & Brunch · Outdoor Dining</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="#"><i class="fas fa-star"></i><span><b>4.50</b> <span class="type-text">(47 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="https://www.haywirerestaurant.com/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-1">
+        <div class="listings-image listing-image-host2">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/28uuQ3wsbaPaSNv7AdwCCJ/6993455087c3cb9f859e87aa0afdde64/hutchinsBBQ-food-dallas-01-preview.png" alt="Food Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Food in DFW Metroplex</span>
+              <h2 id="lorenzo-dallas">Hutchins BBQ</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Barbeque · Desserts</span>
+            <span class="type-text">Indoor dining · Takeout</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="#"><i class="fas fa-star"></i><span><b>4.50</b> <span class="type-text">(1645 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="https://hutchinsbbq.com/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-1">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/2Cic6f9Edl4ML84q0Uh0G4/73661476725f362f83a0833f9491de07/musume-food-dallas-01-preview.png" alt="Food Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Food in Dallas, Texas</span>
+              <h2 id="lorenzo-dallas">Musume</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Sushi Bars · Cocktail bars · Asian Fusion</span>
+            <span class="type-text">Indoor & Outdoor dining · Takeout</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="#"><i class="fas fa-star"></i><span><b>4.00</b> <span class="type-text">(210 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="http://www.musumedallas.com/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-1">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/3c9it7KWoDQxKHkKtcAxjX/9358f5fb2e40030c9b1e82fcf2595d77/crabhouse-food-dallas-01-preview.png" alt="Food Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Food in Dallas, Texas</span>
+              <h2 id="lorenzo-dallas">Crab House Seafood & Oyster Bar</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Seafood · Bars</span>
+            <span class="type-text">Indoor dining · Takeout</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="#"><i class="fas fa-star"></i><span><b>3.80</b> <span class="type-text">(678 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="http://crabhousedtx.com/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Pagination Section -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Map Container -->
+    <div class="listings-map">
+      <div class="main-googleMap">
+        <div id="map-food"></div>
+      </div>
+  </section>
   <!-- Footer link section -->
   <footer class="footer-link-section">
     <div class="container-fluid">
