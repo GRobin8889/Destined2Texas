@@ -82,12 +82,20 @@ function initMap() {
     ['<strong>Home2 Suites by Hilton San Antonio at The Rim</strong></br>17303 Vance Jackson Rd, San Antonio, TX 78257</br>Phone: (210) 561-6123</br><a href="https://www.hilton.com/en/hotels/satrmht-home2-suites-san-antonio-at-the-rim/?SEO_id=GMB-HT-SATRMHT&y_source=1_MTE1NjQ2NjItNzE1LWxvY2F0aW9uLmdvb2dsZV93ZWJzaXRlX292ZXJyaWRl" target="_blank">Visit Website</a>', 29.6037728, -98.5986218, 21]
   ];
 
+  var foodLocations = [
+    ['<strong>Royal 38</strong></br>2301 N Akard St Suite 210, Dallas, TX 75201</br>Phone: (214) 736-9010</br><a href="http://royal38dallas.com/" target="_blank">Visit Website</a>', 32.7896152, -96.8077467, 1],
+    ['<strong>Haywire – Uptown</strong></br>1920 McKinney Ave Suite 100, Dallas, TX 75201</br>Phone: (469) 501-5522</br><a href="http://haywirerestaurant.com/" target="_blank">Visit Website</a>', 32.8340693, -96.8215948, 2],
+    ['<strong>Hutchins BBQ</strong></br>9225 Preston Rd, Frisco, TX 75033</br>Phone: (972) 377-2046</br><a href="https://hutchinsbbq.com/frisco-menu" target="_blank">Visit Website</a>', 33.1829312, -96.7451959, 3],
+    ['<strong>Musume</strong></br>2330 Flora St Suite 100, Dallas, TX 75204</br>Phone: (214) 871-8883</br><a href="http://musumedallas.com/" target="_blank">Visit Website</a>', 32.7894246, -96.8000853, 4],
+    ['<strong>Crab House Seafood & Oyster Bar</strong></br>2508 Maple Ave, Dallas, TX 75201</br>Phone: (469) 317-7666</br><a href="http://crabhousedtx.com/" target="_blank">Visit Website</a>', 32.7950459, -96.805655, 5]
+  ];
+
   var center = {
     lat: 31.291902,
     lng: -97.148412
   };
 
-  var map = new google.maps.Map(document.getElementById('map-lodge'), {
+  var map = new google.maps.Map(document.getElementById('map'), {
     zoom: 8,
     center: center,
     MapTypeId: google.maps.MapTypeId.ROADMAP,
@@ -97,19 +105,35 @@ function initMap() {
 
   var infowindow = new google.maps.InfoWindow({});
 
-  var marker, hotel;
+  var marker, i;
 
-  for (hotel = 0; hotel < hotelLocations.length; hotel++) {
+  // For the Lodging listings page
+  for (i = 0; i < hotelLocations.length; i++) {
     marker = new google.maps.Marker({
-      position: new google.maps.LatLng(hotelLocations[hotel][1], hotelLocations[hotel][2], hotelLocations[hotel][3], hotelLocations[hotel][4], hotelLocations[hotel][5], hotelLocations[hotel][6], hotelLocations[hotel][7], hotelLocations[hotel][8], hotelLocations[hotel][9], hotelLocations[hotel][10], hotelLocations[hotel][11], hotelLocations[hotel][12], hotelLocations[hotel][13], hotelLocations[hotel][14], hotelLocations[hotel][15], hotelLocations[hotel][16], hotelLocations[hotel][17], hotelLocations[hotel][18], hotelLocations[hotel][19], hotelLocations[hotel][20], hotelLocations[hotel][21]),
+      position: new google.maps.LatLng(hotelLocations[i][1], hotelLocations[i][2], hotelLocations[i][3], hotelLocations[i][4], hotelLocations[i][5], hotelLocations[i][6], hotelLocations[i][7], hotelLocations[i][8], hotelLocations[i][9], hotelLocations[i][10], hotelLocations[i][11], hotelLocations[i][12], hotelLocations[i][13], hotelLocations[i][14], hotelLocations[i][15], hotelLocations[i][16], hotelLocations[i][17], hotelLocations[i][18], hotelLocations[i][19], hotelLocations[i][20], hotelLocations[i][21]),
       map: map,
     });
 
-    google.maps.event.addListener(marker, 'click', (function(marker, hotel) {
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
       return function() {
-        infowindow.setContent(hotelLocations[hotel][0]);
+        infowindow.setContent(hotelLocations[i][0]);
         infowindow.open(map, marker);
       }
-    })(marker, hotel));
+    })(marker, i));
+  }
+
+  // For the Food listings page
+  for (i = 0; i < foodLocations.length; i++) {
+    marker = new google.maps.Marker({
+      position: new google.maps.LatLng(foodLocations[i][1], foodLocations[i][2], foodLocations[i][3], foodLocations[i][4], foodLocations[i][5]),
+      map: map,
+    });
+
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+      return function() {
+        infowindow.setContent(foodLocations[i][0]);
+        infowindow.open(map, marker);
+      }
+    })(marker, i));
   }
 }
