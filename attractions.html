@@ -91,16 +91,62 @@
     </div>
   </section>
   <!-- Filter Header Section -->
-  <section class="filter-header-section">
+  <section class="filter-header-section shadow" id="fixed-filter">
     <header class="filter-head">
       <div class="btn-group" role="group" aria-label="Basic outlined example">
-        <button type="button" class="btn btn-outline-dark">Map Texas City</button>
+        <div class="btn-group" role="group">
+          <button id="btnGroupDrop1" type="button" class="btn btn-outline-dark dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            Map Texas City
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="btnGroupDrop1">
+            <li><a class="dropdown-item" href="#">Austin, Texas</a></li>
+            <li><a class="dropdown-item" href="#">Dallas, Texas</a></li>
+            <li><a class="dropdown-item" href="#">Fort Worth, Texas</a></li>
+            <li><a class="dropdown-item" href="#">Houston, Texas</a></li>
+            <li><a class="dropdown-item" href="#">San Antonio, Texas</a></li>
+          </ul>
+        </div>
         <button type="button" class="btn btn-outline-dark">Types of Attractions</button>
         <button type="button" class="btn btn-danger btn-outline-dark d-flex"><i class="fas fa-search"></i></button>
       </div>
     </header>
   </section>
-
+  <!-- Listing and Map Section -->
+  <section class="listing-section">
+    <div class="listings-main">
+      <span class="filter-text-host-food">City | All Attractions</span>
+      <h1 class="list-header">Attractions in Selected City</h1>
+      <div class="listings-filters">
+        <button type="button" class="btn btn-sm">Price</button>
+        <button type="button" class="btn btn-sm">More Filters</button>
+      </div>
+      <div class="listings-scarcity">
+        <p><i class="fas fa-caravan"></i></p>
+        <span>
+          View each attraction listing by clicking on their website link provided with their listing.
+        </span>
+      </div>
+      <!-- Pagination Section -->
+      <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+          <li class="page-item disabled">
+            <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item">
+            <a class="page-link" href="#">Next</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <!-- Map Container -->
+    <div class="listings-map">
+      <div class="main-googleMap">
+        <div id="map-attract"></div>
+      </div>
+  </section>
   <!-- Footer link section -->
   <footer class="footer-link-section">
     <div class="container-fluid">
