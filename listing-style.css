@@ -60,17 +60,8 @@ body {
   border-right: 1.5px solid lightgray;
 }
 
-.filter-text-host {
-  visibility: hidden;
+.filter-text-host-lodge, .filter-text-host-food {
   position: relative;
-}
-
-.filter-text-host::after {
-  visibility: visible;
-  position: absolute;
-  top: 0;
-  left: 0;
-  content: '2 nights | 5 Aug - 8 Aug | 2 guests';
 }
 
 .list-header {
@@ -97,7 +88,7 @@ body {
   padding-bottom: 15px;
 }
 
-.fa-calendar-alt {
+.fa-hotel, .fa-hamburger, .fa-caravan {
   font-size: 18px;
   padding-right: 6px;
   color: #bf0a30;
@@ -159,6 +150,22 @@ body {
   content: 'Great Deal!';
   background: white;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  border-radius: 4px;
+  padding: 4px 8px;
+  top: 10px;
+  left: 10px;
+  letter-spacing: 0.48px;
+  font-size: 12px;
+  font-family: 'Circular Medium';
+  text-transform: uppercase;
+}
+
+.listing-image-host2::before {
+  position: absolute;
+  content: 'Popular!';
+  background: #FF4848;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.18);
+  color: white;
   border-radius: 4px;
   padding: 4px 8px;
   top: 10px;
@@ -283,6 +290,10 @@ body {
   line-height: 18px;
 }
 
+.external-cta .btn {
+  border-radius: 30px;
+}
+
 .listings-starting-price {
   font-size: 18px;
   font-family: 'Circular';
@@ -323,7 +334,7 @@ body {
   top: 0;
 }
 
-#map-lodge {
+#map-lodge, #map-food, #map-attract {
   height: 100%;
   width: 100%;
 }
@@ -331,7 +342,7 @@ body {
 /*-----------------------Media Queries----------------------*/
 /* -----Screensize for Ipad/Tablet (1024px)----- */
 @media screen and (max-width: 1024px) {
-  #map-lodge {
+  #map-lodge, #map-food, #map-attract {
     visibility: hidden;
   }
 
@@ -344,7 +355,7 @@ body {
 
 /* -----Screensize for Mobile Phones (min 370px and max 520px)----- */
 @media screen and (min-width: 370px) and (max-width: 520px) {
-  #map-lodge {
+  #map-lodge, #map-food, #map-attract {
     visibility: hidden;
   }
 
@@ -354,7 +365,7 @@ body {
     padding: 0;
   }
 
-  .filter-text-host {
+  .filter-text-host-lodge,  .filter-text-host-food {
     display: flex;
   }
 
@@ -371,6 +382,10 @@ body {
     width: 370px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .listings-filters {
+    text-align: center;
   }
 
   .listings-items {
