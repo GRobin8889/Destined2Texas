@@ -334,7 +334,7 @@ body {
   top: 0;
 }
 
-#map-lodge, #map-food, #map-attract {
+#map {
   height: 100%;
   width: 100%;
 }
@@ -342,7 +342,7 @@ body {
 /*-----------------------Media Queries----------------------*/
 /* -----Screensize for Ipad/Tablet (1024px)----- */
 @media screen and (max-width: 1024px) {
-  #map-lodge, #map-food, #map-attract {
+  #map {
     visibility: hidden;
   }
 
@@ -355,7 +355,7 @@ body {
 
 /* -----Screensize for Mobile Phones (min 370px and max 520px)----- */
 @media screen and (min-width: 370px) and (max-width: 520px) {
-  #map-lodge, #map-food, #map-attract {
+  #map {
     visibility: hidden;
   }
 
