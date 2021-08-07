@@ -31,6 +31,7 @@ body {
   position: sticky;
   top: 0px;
   z-index: 2;
+  border-bottom: 1.5px solid lightgray;
 }
 
 .filter-head {
