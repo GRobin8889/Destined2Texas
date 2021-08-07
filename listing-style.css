@@ -270,6 +270,18 @@ body {
   padding-right: 6px;
 }
 
+.fa-yelp {
+  color: red;
+}
+
+.trp-adv-star {
+  color: #00aa6c
+}
+
+.trip-adv-logo {
+  width: 100px;
+}
+
 .listings-ratings {
   align-self: flex-end;
 }
@@ -294,6 +306,7 @@ body {
 
 .external-cta .btn {
   border-radius: 30px;
+  margin-top: 10px;
 }
 
 .listings-starting-price {
@@ -404,5 +417,9 @@ body {
     padding: 0;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .external-cta .btn {
+    margin-top: 6px;
   }
 }
