@@ -32,6 +32,7 @@ body {
   top: 0px;
   z-index: 2;
   border-bottom: 1.5px solid lightgray;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.18);
 }
 
 .filter-head {
@@ -278,7 +279,7 @@ body {
   color: #00aa6c
 }
 
-.trip-adv-logo {
+.trip-adv-logo, .hotels-dotcom-logo {
   width: 100px;
 }
 
@@ -313,6 +314,7 @@ body {
   font-size: 18px;
   font-family: 'Circular';
   font-weight: bold;
+  margin-top: 10px;
 }
 
 .listings-starting-price span {
