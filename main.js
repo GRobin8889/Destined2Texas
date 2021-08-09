@@ -42,15 +42,7 @@ weekday[6] = "sat";
 
 document.getElementsByClassName(weekday[day.getDay()])[0].classList.add("current-day");
 
-
 //----------------Listings Pages (attractions.html, food.html, lodging.html) Google Map JavaScript----------------//
-//Set the Google Maps marker
-var marker = new google.maps.Marker({
-  position: myCenter
-});
-
-marker.setMap(map);
-
 // Map for ALL of the Listings Pages
 function initMap() {
   var hotelLocations = [
@@ -138,4 +130,25 @@ function initMap() {
       }
     })(marker, i));
   }
+}
+
+// ----------Scroll-up Button Functionality------------- //
+// Get the button
+var scrollUpButton = document.getElementById("scroll-up-button");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    scrollUpButton.style.display = "block";
+  } else {
+    scrollUpButton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
