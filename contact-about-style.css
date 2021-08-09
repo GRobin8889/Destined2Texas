@@ -19,3 +19,43 @@ body {
   padding: 3rem;
   color: white;
 }
+
+/* ---------Contact Us page------------ */
+/* Contact Information Section */
+.in-touch-section {
+  background: none;
+  border-top: none;
+}
+
+.form-head {
+  padding-top: 1.5rem;
+  font-size: 40px;
+}
+
+.call-us {
+  margin-top: 50px;
+}
+
+.hours {
+  background-color: #bf0a30;
+  padding-bottom: 25px;
+}
+
+.email {
+  background-color: #343A40;
+}
+
+/* Google Map Section */
+.map-section {
+  height: 550px;
+}
+
+.map-section .map {
+  margin-bottom: -100px;
+  margin-left: -12px;
+  margin-right: -12px;
+}
+
+.map iframe {
+  border-bottom: 2px solid black;
+}
