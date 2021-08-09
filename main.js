@@ -83,6 +83,7 @@ function initMap() {
   ];
 
   var foodLocations = [
+    // Dallas, Texas Locations //
     ['<strong>Royal 38</strong></br>2301 N Akard St Suite 210, Dallas, TX 75201</br>Phone: (214) 736-9010</br><a href="http://royal38dallas.com/" target="_blank">Visit Website</a>', 32.7896152, -96.8077467, 1],
     ['<strong>Haywire – Uptown</strong></br>1920 McKinney Ave Suite 100, Dallas, TX 75201</br>Phone: (469) 501-5522</br><a href="http://haywirerestaurant.com/" target="_blank">Visit Website</a>', 32.8340693, -96.8215948, 2],
     ['<strong>Hutchins BBQ</strong></br>9225 Preston Rd, Frisco, TX 75033</br>Phone: (972) 377-2046</br><a href="https://hutchinsbbq.com/frisco-menu" target="_blank">Visit Website</a>', 33.1829312, -96.7451959, 3],
@@ -95,8 +96,9 @@ function initMap() {
     lng: -97.148412
   };
 
+  // THe Google Map Initiation
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 8,
+    zoom: 7.8,
     center: center,
     MapTypeId: google.maps.MapTypeId.ROADMAP,
     // Hide map overay
