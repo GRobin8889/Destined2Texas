@@ -6,8 +6,6 @@ body {
   background-attachment: fixed;
 }
 
-/* ----------------------------------------- */
-/* ---------Contact Us & About Us Pages-------- */
 /* Page Header Section */
 .body-header-section .container-fluid {
   background-color: #002868;
@@ -18,4 +16,46 @@ body {
   text-align: center;
   padding: 3rem;
   color: white;
+}
+
+/* Video Section */
+.video-section {
+  padding-bottom: 24px;
+  border-bottom: 2px solid black;
+}
+
+.video-section .container-fluid {}
+
+.video-headers {
+  margin-top: 18px;
+  margin-bottom: 18px;
+  text-align: center;
+}
+
+.disclaimer {
+  text-align: center;
+  margin-top: 18px;
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.video-section .row {
+  text-align: center;
+}
+
+.video-section iframe {
+  border: 1.5px solid gray;
+  border-radius: 30px;
+  box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.18);
+}
+
+/*-----------------------Media Queries----------------------*/
+/* -----Screensize for Mobile Phones (min 370px and max 520px)----- */
+@media screen and (min-width: 370px) and (max-width: 520px) {
+
+  /* Video Section */
+  .video-section iframe {
+    width: 350px;
+    height: 200px;
+  }
 }
