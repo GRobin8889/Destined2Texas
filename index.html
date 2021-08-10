@@ -56,7 +56,9 @@
                 <li><a class="dropdown-item" href="fort-worth.html">Fort Worth</a></li>
                 <li><a class="dropdown-item" href="houston.html">Houston</a></li>
                 <li><a class="dropdown-item" href="san-antonio.html">San Antonio</a></li>
-                <li><hr class="dropdown-divider"></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
                 <li><a class="dropdown-item" href="explore-cities.html"><b>View All Cities</b></a></li>
               </ul>
             </li>
@@ -353,6 +355,30 @@
 
   <!-- My JavaScript -->
   <script src="main.js"></script>
+  <!-- Scroll-up Button Functionality JavaScript -->
+  <script>
+    // Get the button
+    var scrollUpButton = document.getElementById("scroll-up-button");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {
+      scrollFunction()
+    };
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        scrollUpButton.style.display = "block";
+      } else {
+        scrollUpButton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
 </body>
 
 </html>
