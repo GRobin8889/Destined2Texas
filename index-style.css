@@ -11,10 +11,10 @@ body {
   display: none;
   position: fixed;
   bottom: 20px;
-  right: 30px;
+  right: 60px;
   z-index: 99;
   border: 2px solid red;
-  border-radius: 20px;
+  border-radius: 50%;
   background-color: gray;
   color: black;
   padding: 15px;
