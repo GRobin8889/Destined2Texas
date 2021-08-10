@@ -20,15 +20,15 @@ body {
 
 /* Video Section */
 .video-section {
-  padding-bottom: 24px;
+  padding-bottom: 36px;
   border-bottom: 2px solid black;
 }
 
 .video-section .container-fluid {}
 
 .video-headers {
-  margin-top: 18px;
-  margin-bottom: 18px;
+  padding-top: 36px;
+  padding-bottom: 18px;
   text-align: center;
 }
 
@@ -44,12 +44,24 @@ body {
 }
 
 .video-section iframe {
+  width: 450px;
+  height: 255px;
   border: 1.5px solid gray;
   border-radius: 30px;
   box-shadow: 5px 3px 5px rgba(0, 0, 0, 0.18);
 }
 
 /*-----------------------Media Queries----------------------*/
+/* -----Screensize for Ipad/Tablet (1024px)----- */
+@media screen and (max-width: 1024px) {
+
+  /* Video Section */
+  .video-section iframe {
+    width: 350px;
+    height: 200px;
+  }
+}
+
 /* -----Screensize for Mobile Phones (min 370px and max 520px)----- */
 @media screen and (min-width: 370px) and (max-width: 520px) {
 
