@@ -67,6 +67,10 @@ body {
   top: -25px;
 }
 
+.saved-login .fa-heart:hover, .saved-login .fa-lock:hover {
+  transform: scale(1.08);
+}
+
 /* Hero Text with Video Section */
 .hero-section {
   display: flex;
