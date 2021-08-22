@@ -86,7 +86,6 @@ body {
 }
 
 .listings-scarcity span {
-  font-family: 'Circular Bold';
   padding-bottom: 15px;
 }
 
@@ -159,7 +158,6 @@ body {
   left: 10px;
   letter-spacing: 0.48px;
   font-size: 12px;
-  font-family: 'Circular Medium';
   text-transform: uppercase;
 }
 
@@ -175,7 +173,6 @@ body {
   left: 10px;
   letter-spacing: 0.48px;
   font-size: 12px;
-  font-family: 'Circular Medium';
   text-transform: uppercase;
 }
 
@@ -198,7 +195,6 @@ body {
   font-size: 14px;
   line-height: 18px;
   color: gray;
-  font-family: 'Circular Light';
 }
 
 .listings-title {
@@ -220,7 +216,6 @@ body {
 .listings-icon-text h2 {
   font-size: 24px;
   margin: 5px 0 15px;
-  font-family: 'Circular Medium';
   font-weight: lighter;
 }
 
@@ -291,7 +286,6 @@ body {
   color: black;
   text-decoration: none;
   font-size: 14px;
-  font-family: 'Circular Book';
 }
 
 .listings-ratings a:hover {
@@ -312,7 +306,6 @@ body {
 
 .listings-starting-price {
   font-size: 18px;
-  font-family: 'Circular';
   font-weight: bold;
   margin-top: 10px;
 }
@@ -322,7 +315,6 @@ body {
 }
 
 .listings-total-price {
-  font-family: 'Circular';
   font-size: 14px;
   color: gray;
   text-decoration: underline;
