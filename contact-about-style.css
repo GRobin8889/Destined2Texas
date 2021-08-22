@@ -60,3 +60,83 @@ body {
 .map iframe {
   border-bottom: 2px solid black;
 }
+
+/* About Information Section */
+.about-us-section {
+  border-bottom: 2px solid black;
+  background-color: #EEEEEE;
+}
+
+.about-us-section .btn-danger {
+  margin-bottom: 22px;
+}
+
+.about-head {
+  text-align: center;
+  padding-top: 25px;
+  font-size: 48px;
+}
+
+.greg-pic, .greg-info {
+  text-align: center;
+}
+
+.greg-pic img {
+  margin-top: 32px;
+  width: 55rem;
+}
+
+.info-head-one {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.info-head-two {
+  font-size: 32px;
+  margin-bottom: 28px;
+}
+
+.info-text {
+  text-align: left;
+  margin-left: 80px;
+  margin-right: 80px;
+}
+
+.social-media {
+  margin-top: 12px;
+  margin-bottom: 12px;
+}
+
+.social-icon {
+  font-size: 48px;
+}
+
+.social-icon a {
+  color: gray;
+}
+
+/*-----------------------Media Queries----------------------*/
+/* -----Screensize for Ipad/Tablet (1024px)----- */
+@media screen and (max-width: 1024px) {
+
+  /* About Information Section */
+  .greg-pic img {
+    width: 45rem;
+    margin-bottom: 18px;
+  }
+}
+
+/* -----Screensize for Mobile Phones (min 370px and max 520px)----- */
+@media screen and (min-width: 370px) and (max-width: 520px) {
+
+  /* About Information Section */
+  .greg-pic img {
+    width: 20rem;
+    margin-bottom: 18px;
+  }
+
+  .info-text {
+    margin-left: 6px;
+    margin-right: 6px;
+  }
+}
