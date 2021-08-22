@@ -1,4 +1,5 @@
 body {
+  font-family: 'Pangolin', cursive !important;
   background-color: #ffffff;
   opacity: 0.9;
   background-size: 20px 20px;
@@ -378,15 +379,125 @@ body {
   padding: 5px 5px;
 }
 
-/*-------------------*/
-/*---Modal Styling---*/
+/*----------------MODALS---------------*/
+/*---Login Modal Styling---*/
+/* Full-width input fields */
+.login-modal-section input[type=text], .login-modal-section input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+.login-modal-section button {
+  background-color: #bf0a30;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+.login-modal-section button:hover {
+  opacity: 0.8;
+}
+
+/* Extra styles for the cancel button */
+.login-modal-section .cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.login-modal-section .imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+.login-modal-section img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.login-modal-section .container {
+  padding: 16px;
+}
+
+.login-modal-section span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* The Modal (background) */
+.login-modal-section .modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 6; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content/Box */
+.login-modal-section .modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 40%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button (x) */
+.login-modal-section .close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.login-modal-section .close:hover,
+.login-modal-section .close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.login-modal-section .animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)}
+  to {-webkit-transform: scale(1)}
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)}
+  to {transform: scale(1)}
+}
+
+/*---Send Email Modal Styling---*/
 /*Modal background*/
-.modal {
+.send-email-section .modal {
   display: none;
   /* Hidden by default */
   position: fixed;
   /* Stay in place */
-  z-index: 1;
+  z-index: 6;
   /* Sit on top */
   left: 0;
   top: 0;
@@ -403,7 +514,7 @@ body {
 }
 
 /*Modal content*/
-.modal-content {
+.send-email-section .modal-content {
   background-color: #fefefe;
   margin: 10% auto;
   /* 10% from the top and centered */
@@ -413,48 +524,48 @@ body {
   /* Could be more or less, depending on screen size */
 }
 
-#modal-content-width {
+.send-email-section #modal-content-width {
   width: 50%;
 }
 
 /* Modal Header */
-.modal-header {
+.send-email-section .modal-header {
   padding: 2px 16px;
   background-color: #bf0a30;
   color: white;
 }
 
 /* Modal Body */
-.form-head {
+.send-email-section .form-head {
   text-align: center;
   font-size: 28px;
   margin-bottom: 2rem;
 }
 
-.modal-body {
+.send-email-section .modal-body {
   padding: 2px 2px;
   background-color: #343A40;
 }
 
 /* Modal Footer */
-.modal-footer {
+.send-email-section .modal-footer {
   background-color: white;
 }
 
-.modal-footer .modal-site-logo {
+.send-email-section .modal-footer .modal-site-logo {
   margin: auto;
 }
 
 /*Close button*/
-.close {
+.send-email-section .close {
   color: #aaa;
   font-size: 28px;
   font-weight: bold;
   float: right;
 }
 
-.close:hover,
-.close:focus {
+.send-email-section .close:hover,
+.send-email-section .close:focus {
   color: black;
   text-decoration: none;
   cursor: pointer;
@@ -462,7 +573,7 @@ body {
 
 /*----------------------------------------------------------*/
 /*-----------------------Media Queries----------------------*/
-/* -----Screensize for Ipad/Tablet (1024px)----- */
+/* -----Screensize for Ipad/Tablet (max width = 1024px)----- */
 @media screen and (max-width: 1024px) {
 
   /* Header & Navigation Section */
@@ -557,7 +668,7 @@ body {
     text-align: center;
   }
 
-  #modal-content-width {
+  .send-email-section #modal-content-width {
     width: 80%;
   }
 
@@ -571,7 +682,7 @@ body {
   }
 }
 
-/* -----Screensize for Mobile Phones (520px)----- */
+/* -----Screensize for Mobile Phones (max width = 520px)----- */
 @media screen and (min-width: 370px) and (max-width: 520px) {
 
   /* Header & Navigation Section */
@@ -713,7 +824,11 @@ body {
     min-width: 20rem;
   }
 
-  #modal-content-width {
+  .login-modal-section .modal-content {
+    width: 80%;
+  }
+
+  .send-email-section #modal-content-width {
     width: 100%;
   }
 
@@ -732,5 +847,16 @@ body {
 
   .contact-info, .footer-links {
     text-align: center;
+  }
+}
+
+/* -----Screensize for Additional Small Screens (max width = 300px)----- */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
   }
 }
