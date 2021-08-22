@@ -28,6 +28,7 @@ body {
 }
 
 .form-head {
+  text-align: center;
   padding-top: 1.5rem;
   font-size: 40px;
 }
