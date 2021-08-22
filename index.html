@@ -7,6 +7,10 @@
   <title>Destined2Texas</title>
   <!-- My Stylesheets -->
   <link rel="stylesheet" href="index-style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
   <!--favicon-->
   <link rel="apple-touch-icon" sizes="180x180" href="https://images.ctfassets.net/h0xqyno1fssl/7pJdh82KiwI4vl2XsfwFFn/e3e0e6308bd97a2a1e3a851eff5b94d9/d2t-favicon-180x180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://images.ctfassets.net/h0xqyno1fssl/5IyIKe8dTrWT2QfpLRL9za/0a38b46d0dfb1f62fc60aa20631d4155/d2t-favicon-32x32.png">
@@ -24,6 +28,34 @@
 <body>
   <!-- Scroll-up Button -->
   <button onclick="topFunction()" id="scroll-up-button" title="Go to top">Top</button>
+  <!-- Login Modal Section -->
+  <section class="login-modal-section">
+    <div class="modal" id="myModal">
+      <!-- Modal Content -->
+      <form class="modal-content animate" action="/action_page.php">
+        <span class="close" title="Close Modal">&times;</span>
+        <div class="imgcontainer">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/1kdpa9h4WJvf88xWGO0yVA/dd3c494b1acd03a4ff6a2e6ab418abb5/login-avatar.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('myModal').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+  </section>
   <!-- Header & Navigation Section -->
   <section class="header-navigation">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -35,7 +67,7 @@
             <button class="btn btn-outline-dark" type="submit">Search</button>
           </form>
           <!-- Favorites container and customer login -->
-          <p class="saved-login"><a type="button" name="button"><i class="fas fa-heart">&nbsp;Saved</i></a>&nbsp;&nbsp;<a type="button" name="button"><i class="fas fa-lock">&nbsp;Login</i></a></p>
+          <p class="saved-login"><a type="button" name="button"><i class="fas fa-heart">&nbsp;Saved</i></a>&nbsp;&nbsp;<a type="button" name="button"><i class="fas fa-lock myBtn">&nbsp;Login</i></a></p>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -249,60 +281,62 @@
                 </table>
                 <p>&nbsp;</p>
                 <!-- Button trigger/open modal -->
-                <div class="send-email">
-                  <a type="button" class="btn btn-link" id="cta-send"><u>Send Us An Email!</u></a></td>
+                <div class="send-email myBtn">
+                  <a type="button" class="btn btn-link"><u>Send Us An Email!</u></a></td>
                 </div>
-                <!-- Modal -->
-                <div class="modal" id="email-modal">
-                  <!-- Modal content -->
-                  <div class="modal-content" id="modal-content-width">
-                    <div class="modal-header">
-                      <h3>Send Us An Email!</h3>
-                      <span class="close">&times;</span>
-                    </div>
-                    <div class="modal-body">
-                      <h5 class="form-head"><u>Let Us Help You Explore Texas!</u></h5>
-                      <form class="row g-3 form-container">
-                        <div>
-                          <div class="row">
-                            <div class="col">
-                              <input type="text" class="form-control" placeholder="First name" aria-label="First name">
-                            </div>
-                            <div class="col">
-                              <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                <!-- Send Email Modal Section -->
+                <section class="send-email-section">
+                  <div class="modal" id="myModal2">
+                    <!-- Modal content -->
+                    <div class="modal-content" id="modal-content-width">
+                      <div class="modal-header">
+                        <h3>Send Us An Email!</h3>
+                        <span class="close">&times;</span>
+                      </div>
+                      <div class="modal-body">
+                        <h5 class="form-head"><u>Let Us Help You Explore Texas!</u></h5>
+                        <form class="row g-3 form-container">
+                          <div>
+                            <div class="row">
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="First name" aria-label="First name">
+                              </div>
+                              <div class="col">
+                                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+                              </div>
                             </div>
                           </div>
+                          <div>
+                            <label for="inputEmail4" class="form-label">*Email</label>
+                            <input type="email" class="form-control" id="inputEmail4">
+                          </div>
+                          <div class="">
+                            <select class="form-select" aria-label="Default select example">
+                              <option selected>*Select Inquiry</option>
+                              <option value="1">Learn About Services</option>
+                              <option value="2">Book Hotel</option>
+                              <option value="3">Order Brochure</option>
+                              <option value="4">Food Suggestions</option>
+                              <option value="5">Events Happening</option>
+                            </select>
+                          </div>
+                          <div class="form-floating">
+                            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
+                            <label for="floatingTextarea">Enter Comments Here</label>
+                          </div>
+                          <div class="col-12">
+                            <button type="submit" class="btn btn-danger btn-lg">Send Email</button>
+                          </div>
+                        </form>
+                      </div>
+                      <div class="modal-footer">
+                        <div class="modal-site-logo">
+                          <img src="https://images.ctfassets.net/h0xqyno1fssl/vNzVVg1nqecfumNxhineo/cec84f74d58a3492e2d389cf9fbd958b/d2t-site-logo.png" alt="site-logo">
                         </div>
-                        <div>
-                          <label for="inputEmail4" class="form-label">*Email</label>
-                          <input type="email" class="form-control" id="inputEmail4">
-                        </div>
-                        <div class="">
-                          <select class="form-select" aria-label="Default select example">
-                            <option selected>*Select Inquiry</option>
-                            <option value="1">Learn About Services</option>
-                            <option value="2">Book Hotel</option>
-                            <option value="3">Order Brochure</option>
-                            <option value="4">Food Suggestions</option>
-                            <option value="5">Events Happening</option>
-                          </select>
-                        </div>
-                        <div class="form-floating">
-                          <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea"></textarea>
-                          <label for="floatingTextarea">Enter Comments Here</label>
-                        </div>
-                        <div class="col-12">
-                          <button type="submit" class="btn btn-danger btn-lg">Send Email</button>
-                        </div>
-                      </form>
-                    </div>
-                    <div class="modal-footer">
-                      <div class="modal-site-logo">
-                        <img src="https://images.ctfassets.net/h0xqyno1fssl/vNzVVg1nqecfumNxhineo/cec84f74d58a3492e2d389cf9fbd958b/d2t-site-logo.png" alt="site-logo">
                       </div>
                     </div>
                   </div>
-                </div>
+                </section>
               </div>
             </div>
           </div>
