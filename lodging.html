@@ -8,6 +8,10 @@
   <!-- My Stylesheets -->
   <link rel="stylesheet" href="index-style.css">
   <link rel="stylesheet" href="listing-style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
   <!--favicon-->
   <link rel="apple-touch-icon" sizes="180x180" href="https://images.ctfassets.net/h0xqyno1fssl/7pJdh82KiwI4vl2XsfwFFn/e3e0e6308bd97a2a1e3a851eff5b94d9/d2t-favicon-180x180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://images.ctfassets.net/h0xqyno1fssl/5IyIKe8dTrWT2QfpLRL9za/0a38b46d0dfb1f62fc60aa20631d4155/d2t-favicon-32x32.png">
@@ -25,6 +29,34 @@
 <body>
   <!-- Scroll-up Button -->
   <button onclick="topFunction()" id="scroll-up-button" title="Go to top">Top</button>
+  <!-- Login Modal Section -->
+  <section class="login-modal-section">
+    <div class="modal" id="myModal">
+      <!-- Modal Content -->
+      <form class="modal-content animate" action="/action_page.php">
+        <span onclick="document.getElementById('myModal').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <div class="imgcontainer">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/1kdpa9h4WJvf88xWGO0yVA/dd3c494b1acd03a4ff6a2e6ab418abb5/login-avatar.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('myModal').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+  </section>
   <!-- Header & Navigation Section -->
   <section class="header-navigation">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -36,7 +68,7 @@
             <button class="btn btn-outline-dark" type="submit">Search</button>
           </form>
           <!-- shopping cart and customer login -->
-          <p class="saved-login"><a type="button" name="button"><i class="fas fa-heart">&nbsp;Saved</i></a>&nbsp;&nbsp;<a type="button" name="button"><i class="fas fa-lock">&nbsp;Login</i></a></p>
+          <p class="saved-login"><a type="button" name="button"><i class="fas fa-heart">&nbsp;Saved</i></a>&nbsp;&nbsp;<a type="button" name="button"><i class="fas fa-lock myBtn">&nbsp;Login</i></a></p>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -144,7 +176,7 @@
           <div class="listings-title">
             <div class="listings-icon-text">
               <span class="type-text">Hotel in Dallas, Texas</span>
-              <h2 id="lorenzo-dallas">Lorenzo Hotel Dallas</h2>
+              <h2>Lorenzo Hotel Dallas</h2>
             </div>
             <div class="listings-title-icon">
               <button><i class="far fa-heart"></i></button>
@@ -1094,6 +1126,18 @@
     function topFunction() {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+  <!-- Landing Page login modal functionality -->
+  <script>
+    // Get the modal
+    var modal = document.getElementsByClassName('modal');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal[0]) {
+        modal[0].style.display = "none";
+      }
     }
   </script>
 </body>
