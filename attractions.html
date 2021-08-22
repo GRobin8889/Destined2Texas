@@ -8,6 +8,10 @@
   <!-- My Stylesheets -->
   <link rel="stylesheet" href="index-style.css">
   <link rel="stylesheet" href="listing-style.css">
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pangolin&display=swap" rel="stylesheet">
   <!--favicon-->
   <link rel="apple-touch-icon" sizes="180x180" href="https://images.ctfassets.net/h0xqyno1fssl/7pJdh82KiwI4vl2XsfwFFn/e3e0e6308bd97a2a1e3a851eff5b94d9/d2t-favicon-180x180.png">
   <link rel="icon" type="image/png" sizes="32x32" href="https://images.ctfassets.net/h0xqyno1fssl/5IyIKe8dTrWT2QfpLRL9za/0a38b46d0dfb1f62fc60aa20631d4155/d2t-favicon-32x32.png">
@@ -25,6 +29,34 @@
 <body>
   <!-- Scroll-up Button -->
   <button onclick="topFunction()" id="scroll-up-button" title="Go to top">Top</button>
+  <!-- Login Modal Section -->
+  <section class="login-modal-section">
+    <div class="modal" id="myModal">
+      <!-- Modal Content -->
+      <form class="modal-content animate" action="/action_page.php">
+        <span onclick="document.getElementById('myModal').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <div class="imgcontainer">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/1kdpa9h4WJvf88xWGO0yVA/dd3c494b1acd03a4ff6a2e6ab418abb5/login-avatar.png" alt="Avatar" class="avatar">
+        </div>
+        <div class="container">
+          <label for="uname"><b>Username</b></label>
+          <input type="text" placeholder="Enter Username" name="uname" required>
+
+          <label for="psw"><b>Password</b></label>
+          <input type="password" placeholder="Enter Password" name="psw" required>
+
+          <button type="submit">Login</button>
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('myModal').style.display='none'" class="cancelbtn">Cancel</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+  </section>
   <!-- Header & Navigation Section -->
   <section class="header-navigation">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -36,7 +68,7 @@
             <button class="btn btn-outline-dark" type="submit">Search</button>
           </form>
           <!-- shopping cart and customer login -->
-          <p class="saved-login"><a type="button" name="button"><i class="fas fa-heart">&nbsp;Saved</i></a>&nbsp;&nbsp;<a type="button" name="button"><i class="fas fa-lock">&nbsp;Login</i></a></p>
+          <p class="saved-login"><a type="button" name="button"><i class="fas fa-heart">&nbsp;Saved</i></a>&nbsp;&nbsp;<a type="button" name="button"><i class="fas fa-lock myBtn">&nbsp;Login</i></a></p>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -141,7 +173,7 @@
           <div class="listings-title">
             <div class="listings-icon-text">
               <span class="type-text">Attractions in DFW Metroplex</span>
-              <h2 id="lorenzo-dallas">Six Flags Over Texas</h2>
+              <h2>Six Flags Over Texas</h2>
             </div>
             <div class="listings-title-icon">
               <button><i class="far fa-heart"></i></button>
@@ -164,7 +196,7 @@
       </div>
       <!-- End of Listing Details Item -->
       <!-- Start of Listing Details Item -->
-      <div class="listings-items" id="marker-1">
+      <div class="listings-items" id="marker-2">
         <div class="listings-image">
           <img src="https://images.ctfassets.net/h0xqyno1fssl/73tkSgJNkZuK83magm1cAF/5154559fed853dcfd7eb111a57134b90/ripleys-attractions-dallas-01-preview.png" alt="Attraction Image">
           <button class="left-img-btn">
@@ -178,7 +210,7 @@
           <div class="listings-title">
             <div class="listings-icon-text">
               <span class="type-text">Attractions in DFW Metroplex</span>
-              <h2 id="lorenzo-dallas">Ripley's Believe It Or Not!</h2>
+              <h2>Ripley's Believe It Or Not!</h2>
             </div>
             <div class="listings-title-icon">
               <button><i class="far fa-heart"></i></button>
@@ -201,7 +233,7 @@
       </div>
       <!-- End of Listing Details Item -->
       <!-- Start of Listing Details Item -->
-      <div class="listings-items" id="marker-1">
+      <div class="listings-items" id="marker-3">
         <div class="listings-image">
           <img src="https://images.ctfassets.net/h0xqyno1fssl/63nElnCbGONYPU5nDRFdNW/971ba9fe79ec8b45abe7e199f2ebf4ef/jwexhibit-attractions-dallas-01-preview.png" alt="Attraction Image">
           <button class="left-img-btn">
@@ -215,7 +247,7 @@
           <div class="listings-title">
             <div class="listings-icon-text">
               <span class="type-text">Attractions in DFW Metroplex</span>
-              <h2 id="lorenzo-dallas">Jurassic World: The Exhibition</h2>
+              <h2>Jurassic World: The Exhibition</h2>
             </div>
             <div class="listings-title-icon">
               <button><i class="far fa-heart"></i></button>
@@ -238,7 +270,7 @@
       </div>
       <!-- End of Listing Details Item -->
       <!-- Start of Listing Details Item -->
-      <div class="listings-items" id="marker-1">
+      <div class="listings-items" id="marker-4">
         <div class="listings-image">
           <img src="https://images.ctfassets.net/h0xqyno1fssl/1uHFPUXJ4XwlDodFXflauo/1d76985dfbe37f45911f5928846871c6/perot-attractions-dallas-01-preview.png" alt="Attraction Image">
           <button class="left-img-btn">
@@ -252,7 +284,7 @@
           <div class="listings-title">
             <div class="listings-icon-text">
               <span class="type-text">Attractions in DFW Metroplex</span>
-              <h2 id="lorenzo-dallas">Perot Museum of Nature and Science</h2>
+              <h2>Perot Museum of Nature and Science</h2>
             </div>
             <div class="listings-title-icon">
               <button><i class="far fa-heart"></i></button>
@@ -275,7 +307,7 @@
       </div>
       <!-- End of Listing Details Item -->
       <!-- Start of Listing Details Item -->
-      <div class="listings-items" id="marker-1">
+      <div class="listings-items" id="marker-5">
         <div class="listings-image">
           <img src="https://images.ctfassets.net/h0xqyno1fssl/Pbq00LsSfrxjdyH00pf9G/b82ee11ba4ff0fa25d6216e7e3e4e4a9/jfk-attractions-dallas-01-preview.png" alt="Attraction Image">
           <button class="left-img-btn">
@@ -289,7 +321,7 @@
           <div class="listings-title">
             <div class="listings-icon-text">
               <span class="type-text">Attractions in DFW Metroplex</span>
-              <h2 id="lorenzo-dallas">JFK Assassination Tour with Lee Harvey Oswald Rooming House</h2>
+              <h2>JFK Assassination Tour with Lee Harvey Oswald Rooming House</h2>
             </div>
             <div class="listings-title-icon">
               <button><i class="far fa-heart"></i></button>
@@ -306,6 +338,598 @@
             </div>
             <div class="listings-price external-cta">
               <a href="https://www.jfkdiscoverytour.com/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-6">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/56zvc3rEeNYfGjoSwvscPS/fee8d952f79499872d9e2d4f53ba99f0/aaSmithMuseum-attractions-ftworth-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in Fort Worth, TX</span>
+              <h2>American Airlines CR Smith Museum</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Speciality Museums</span>
+            <span class="type-text">Fort Worth, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g55857-d560512-Reviews-American_Airlines_CR_Smith_Museum-Fort_Worth_Texas.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>4.50</b> <span class="type-text">(204 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="https://www.crsmithmuseum.org/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-7">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/6FyeaKvMNy0tN8qzhKOaT9/f116693cc3d8d58c39a5b672e125c50f/cowgirlMuseum-attractions-ftworth-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in Fort Worth, TX</span>
+              <h2>National Cowgirl Museum and Hall of Fame</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Speciality Museums · Art Museums · History Museums</span>
+            <span class="type-text">Fort Worth, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g55857-d268112-Reviews-National_Cowgirl_Museum_and_Hall_of_Fame-Fort_Worth_Texas.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>4.50</b> <span class="type-text">(253 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="http://www.cowgirl.net/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-8">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/3rRqjMwZB35X2psJT8Wy3B/7d23b6827a596677e3f98ebd6f4e60cc/stockyards-attractions-ftworth-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in Fort Worth, TX</span>
+              <h2>Fort Worth Stockyards National Historic District</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Historic Sites · Historic Walking Areas</span>
+            <span class="type-text">Fort Worth, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g55857-d108354-Reviews-Fort_Worth_Stockyards_National_Historic_District-Fort_Worth_Texas.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>4.50</b> <span class="type-text">(5309 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="https://www.fortworthstockyards.org/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-9">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/70bCqNbXDwMENZdbjk7siG/dd034583eee872c494b9d92604d013a4/botanicalG-attractions-ftworth-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in Fort Worth, TX</span>
+              <h2>Fort Worth Botanic Garden</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Historic Sites · Nature & Wildlife Areas · Gardens</span>
+            <span class="type-text">Fort Worth, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g55857-d109287-Reviews-Fort_Worth_Botanic_Garden-Fort_Worth_Texas.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>4.50</b> <span class="type-text">(1171 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="https://fwbg.org/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-10">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/3lFiE9lEC19IjxHMOodRKl/a8893e30b0403eccac98b312d0f9345e/toyMuseum-attractions-austin-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in Austin, TX</span>
+              <h2>Texas Toy Museum</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Speciality Museums</span>
+            <span class="type-text">Austin, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g30196-d10175978-Reviews-Texas_Toy_Museum-Austin_Texas.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>4.00</b> <span class="type-text">(36 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="http://www.texastoymuseum.com/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-11">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/1S3zEL21ELoDNmVnjdHsO0/b00d7e1779b123257da6585ad1325670/lbjLibrary-attractions-austin-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in Austin, TX</span>
+              <h2>LBJ Presidential Library</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Speciality Museums · History Museums</span>
+            <span class="type-text">Austin, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g30196-d145840-Reviews-LBJ_Presidential_Library-Austin_Texas.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>4.50</b> <span class="type-text">(3413 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="http://www.lbjlibrary.org/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-12">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/5eiofkxWFvViHm4xnFnwuU/17052c1ef2ef7948ca98f67f1c075497/txcapitol-attractions-austin-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in Austin, TX</span>
+              <h2>Texas State Capitol</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Historic Sites · Architectural Buildings · Government Buildings</span>
+            <span class="type-text">Austin, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g30196-d109316-Reviews-Texas_State_Capitol-Austin_Texas.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>4.50</b> <span class="type-text">(7854 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="https://tspb.texas.gov/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-13">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/5z3MwghH146ExZicSOD5Ft/c6140e5fe550fcc7ae6084c302b46806/westcave-attractions-austin-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in Austin, TX</span>
+              <h2>Westcave Outdoor Discovery Center</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Nature & Wildlife Areas</span>
+            <span class="type-text">Austin, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g30196-d144286-Reviews-Westcave_Outdoor_Discovery_Center-Austin_Texas.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>4.00</b> <span class="type-text">(114 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="https://westcave.org/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-14">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/53JmnHocMQsvUUZTPOnsaU/3d0287476a3b94106cce3e782f03bfbd/natandscimuseum-attractions-houston-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in Houston Metro</span>
+              <h2>The Houston Museum of Natural Science</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Speciality Museums · Science Museums</span>
+            <span class="type-text">Houston, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g56003-d105911-Reviews-The_Houston_Museum_of_Natural_Science-Houston_Texas.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>4.50</b> <span class="type-text">(5043 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="http://www.hmns.org/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-15">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/7yy9rkJyVyC8nIgmfPCsFj/f81b1363cbc455d5c5df8f5564902f5b/spacecenter-attractions-houston-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in Houston Metro</span>
+              <h2>Space Center Houston</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Speciality Museums</span>
+            <span class="type-text">Houston, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g56003-d669494-Reviews-Space_Center_Houston-Houston_Texas.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>4.50</b> <span class="type-text">(9387 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="https://spacecenter.org/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-16">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/5mttMLgvLxQeRUSJC2ozoX/0579d0d03e7a98fa2a65eeab2dd39518/lonestarflight-attractions-houston-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in Houston Metro</span>
+              <h2>Lone Star Flight Museum</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Speciality Museums · Military Museums · History Museums</span>
+            <span class="type-text">Houston, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g56003-d12661795-Reviews-Lone_Star_Flight_Museum-Houston_Texas.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>5.00</b> <span class="type-text">(92 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="https://www.lonestarflight.org/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-17">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/4nF4mXTdoRQEBlfnPWYl4d/b60aec4b8d7555864a4e696e288efa53/fineartsmuseum-attractions-houston-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in Houston Metro</span>
+              <h2>Museum of Fine Arts, Houston</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Art Museums</span>
+            <span class="type-text">Houston, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g56003-d144355-Reviews-Museum_of_Fine_Arts_Houston-Houston_Texas.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>4.50</b> <span class="type-text">(2707 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="https://www.mfah.org/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-18">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/77MSTvR3J90oyFDNbAkkWf/949aefc1cedbca4207ed2703177c296f/riverwalkpkg-attractions-sanantonio-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in San Antonio, TX</span>
+              <h2>San Antonio River Walk Cruise,</br> Hop-On Hop-Off Bus Tour and Tower of the Americas</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Sightseeing Tours</span>
+            <span class="type-text">San Antonio, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/AttractionProductReview-g60956-d11469916-San_Antonio_River_Walk_Cruise_Hop_On_Hop_Off_Bus_Tour_and_Tower_of_the_Americas-San.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>4.50</b> <span class="type-text">(183 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="https://www.citysightseeingsanantonio.com/en/bus-boat-tower" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-19">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/6AH6shSvW0uqSrlVnS2S3q/d304625e1503248b18506524f37683bd/seaworld-attractions-sanantonio-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in San Antonio, TX</span>
+              <h2>SeaWorld - San Antonio</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Amusement & Theme Parks</span>
+            <span class="type-text">San Antonio, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g60956-d103614-Reviews-SeaWorld-San_Antonio_Texas.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>4.00</b> <span class="type-text">(4660 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="https://seaworld.com/san-antonio/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-20">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/3qSljs1jwU12UtpPJkMqHQ/36810cd6643aea055ece77bfb21b261b/sixflags-attractions-sanantonio-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in San Antonio, TX</span>
+              <h2>Six Flags Fiesta Texas</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Amusement & Theme Parks</span>
+            <span class="type-text">San Antonio, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g60956-d105060-Reviews-Six_Flags_Fiesta_Texas-San_Antonio_Texas.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>4.00</b> <span class="type-text">(2982 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="https://www.sixflags.com/fiestatexas" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End of Listing Details Item -->
+      <!-- Start of Listing Details Item -->
+      <div class="listings-items" id="marker-21">
+        <div class="listings-image">
+          <img src="https://images.ctfassets.net/h0xqyno1fssl/6WZ8Od08SQMQN20wWTbJMx/da85bc65043840c1aaf520c805da5812/texasranger-attractions-sanantonio-01-preview.png" alt="Attraction Image">
+          <button class="left-img-btn">
+            <i class="fas fa-arrow-left"></i>
+          </button>
+          <button class="right-img-btn">
+            <i class="fas fa-arrow-right"></i>
+          </button>
+        </div>
+        <div class="listings-content">
+          <div class="listings-title">
+            <div class="listings-icon-text">
+              <span class="type-text">Attractions in San Antonio, TX</span>
+              <h2>The Buckhorn Saloon</br>and Texas Ranger Museum</h2>
+            </div>
+            <div class="listings-title-icon">
+              <button><i class="far fa-heart"></i></button>
+            </div>
+          </div>
+          <div class="separator"></div>
+          <div class="listings-description">
+            <span class="type-text">Speciality Museums</span>
+            <span class="type-text">San Antonio, Texas</span>
+          </div>
+          <div class="listings-details">
+            <div class="listings-ratings">
+              <a href="https://www.tripadvisor.com/Attraction_Review-g60956-d106126-Reviews-The_Buckhorn_Saloon_and_Texas_Ranger_Museum-San_Antonio_Texas.html" target="_blank"><img class="trip-adv-logo" src="https://images.ctfassets.net/h0xqyno1fssl/5TUrKsVSbUOFp4i174WgRT/01e185368a96fd0adf0208b8def0cfe9/Tripadvisor-Logo.png" alt="TripAdvisor Logo"></br><i class="fas fa-star trp-adv-star"></i><span><b>4.00</b> <span class="type-text">(1294 reviews)</span></span></a>
+            </div>
+            <div class="listings-price external-cta">
+              <a href="https://www.buckhornmuseum.com/" target="_blank"><button type="button" class="btn btn-danger">Visit Website&nbsp;&nbsp;<i class="fas fa-external-link-square-alt"></i></button></a>
             </div>
           </div>
         </div>
@@ -394,6 +1018,18 @@
     function topFunction() {
       document.body.scrollTop = 0; // For Safari
       document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+  <!-- Landing Page login modal functionality -->
+  <script>
+    // Get the modal
+    var modal = document.getElementsByClassName('modal');
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function(event) {
+      if (event.target == modal[0]) {
+        modal[0].style.display = "none";
+      }
     }
   </script>
 </body>
