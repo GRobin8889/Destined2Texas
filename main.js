@@ -1,30 +1,41 @@
 'use strict';
 
-//------------------Index.html JavaScript------------------//
-///////// Send Us An Email" Button Modal Functionality ////////////
-// Get the location Modal
-var modal = document.getElementById("email-modal");
+//------------------MODAL JavaScript------------------//
+///////// "Send Us An Email" and "Login" Button Modal Functionality ////////////
+// Get the modal
+var modal = document.getElementsByClassName('modal');
 
-// Get the button that will open the location modal
-var btn = document.getElementById("cta-send")
+// Get the button that will open the modal
+var btn = document.getElementsByClassName("myBtn")
 
-// Get the <span> element that will close the location Modal
-var span = document.getElementsByClassName("close")[0];
+// Get the <span> element that will close the modal
+var span = document.getElementsByClassName("close");
 
-// When the user clicks on the button, open the location modal
-btn.onclick = function() {
-  modal.style.display = "block";
+// When the user clicks on the button, open the modals
+btn[0].onclick = function() {
+  modal[0].style.display = "block";
 }
 
-// When the user clicks on <span> (x), close the location modal
-span.onclick = function() {
-  modal.style.display = "none";
+btn[1].onclick = function() {
+  modal[1].style.display = "block";
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// When the user clicks on <span> (x), close the modals
+span[0].onclick = function() {
+  modal[0].style.display = "none";
+}
+
+span[1].onclick = function() {
+  modal[1].style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modals, close it
 window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
+  if (event.target == modal[0]) {
+    modal[0].style.display = "none";
+  }
+  if (event.target == modal[1]) {
+    modal[1].style.display = "none";
   }
 }
 
