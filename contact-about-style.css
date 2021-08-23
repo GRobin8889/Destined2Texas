@@ -64,7 +64,8 @@ body {
 /* About Information Section */
 .about-us-section {
   border-bottom: 2px solid black;
-  background-color: #EEEEEE;
+  background-image: url("https://images.ctfassets.net/h0xqyno1fssl/5b4SZ9Ln4irAeTfrznoOV2/afcea865d042337349843b9e41b2616b/dallas-hero.jpg");
+  background-attachment: fixed;
 }
 
 .about-us-section .btn-danger {
@@ -112,7 +113,7 @@ body {
 }
 
 .social-icon a {
-  color: gray;
+  color: black;
 }
 
 /*-----------------------Media Queries----------------------*/
