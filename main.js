@@ -116,7 +116,7 @@ function initMap() {
 
   var attractionLocations = [
     // Dallas, Texas Locations //
-    ['<strong>Six Flags Over Texas</strong></br>2201 E Road to Six Flags St, Arlington, TX 76011</br>Phone: (817) 640-8900</br><a href="https://www.papasburgerssatx.com/" target="_blank">Visit Website</a>', 32.7571699, -97.0693937, 1],
+    ['<strong>Six Flags Over Texas</strong></br>2201 E Road to Six Flags St, Arlington, TX 76011</br>Phone: (817) 640-8900</br><a href="https://www.sixflags.com/overtexas" target="_blank">Visit Website</a>', 32.7571699, -97.0693937, 1],
     ['<strong>Ripley&prime;s Believe It or Not!</strong></br>601 E Palace Pkwy, Grand Prairie, TX 75050</br>Phone: (972) 263-2391</br><a href="http://www.ripleys.com/grandprairie" target="_blank">Visit Website</a>', 32.760546, -97.005898, 2],
     ['<strong>Jurassic World The Exhibition</strong></br>5752 Grandscape Blvd, The Colony, TX 75056</br><a href="mailto:JWE@roundroomlive.com">Email Us</a></br><a href="https://jurassicworldexhibition.com/" target="_blank">Visit Website</a>', 33.0736499, -96.8645916, 3],
     ['<strong>Perot Museum of Nature and Science</strong></br>2201 N Field St, Dallas, TX 75201</br>Phone: (214) 428-5555</br><a href="https://www.perotmuseum.org/" target="_blank">Visit Website</a>', 32.7869471, -96.8087659, 4],
