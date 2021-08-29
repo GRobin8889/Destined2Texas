@@ -91,7 +91,56 @@ function initMap() {
     ['<strong>Haywire – Uptown</strong></br>1920 McKinney Ave Suite 100, Dallas, TX 75201</br>Phone: (469) 501-5522</br><a href="http://haywirerestaurant.com/" target="_blank">Visit Website</a>', 32.8340693, -96.8215948, 2],
     ['<strong>Hutchins BBQ</strong></br>9225 Preston Rd, Frisco, TX 75033</br>Phone: (972) 377-2046</br><a href="https://hutchinsbbq.com/frisco-menu" target="_blank">Visit Website</a>', 33.1829312, -96.7451959, 3],
     ['<strong>Musume</strong></br>2330 Flora St Suite 100, Dallas, TX 75204</br>Phone: (214) 871-8883</br><a href="http://musumedallas.com/" target="_blank">Visit Website</a>', 32.7894246, -96.8000853, 4],
-    ['<strong>Crab House Seafood & Oyster Bar</strong></br>2508 Maple Ave, Dallas, TX 75201</br>Phone: (469) 317-7666</br><a href="http://crabhousedtx.com/" target="_blank">Visit Website</a>', 32.7950459, -96.805655, 5]
+    ['<strong>Crab House Seafood & Oyster Bar</strong></br>2508 Maple Ave, Dallas, TX 75201</br>Phone: (469) 317-7666</br><a href="http://crabhousedtx.com/" target="_blank">Visit Website</a>', 32.7950459, -96.805655, 5],
+    // Fort Worth, Texas Locations //
+    ['<strong>Cattlemen&prime;s Steak House</strong></br>2458 N Main St, Fort Worth, TX 76164</br>Phone: (817) 624-3945</br><a href="http://www.cattlemenssteakhouse.com/" target="_blank">Visit Website</a>', 32.789292, -97.3511662, 6],
+    ['<strong>The Biscuit Bar</strong></br>128 E Exchange Ave #640, Fort Worth, TX 76164</br>Phone: (817) 912-5922</br><a href="https://thebiscuit.bar/" target="_blank">Visit Website</a>', 32.7880324, -97.3493081, 7],
+    ['<strong>Heim Barbecue</strong></br>1109 W Magnolia Ave, Fort Worth, TX 76104</br>Phone: (817) 882-6970</br><a href="http://heimbbq.com/" target="_blank">Visit Website</a>', 32.7305101, -97.3395785, 8],
+    ['<strong>Hawaiian Bros</strong></br>4732 Bryant Irvin Rd, Fort Worth, TX 76132</br>Phone: (817) 345-6418</br><a href="https://hawaiianbros.com/" target="_blank">Visit Website</a>', 32.6795832, -97.417411, 9],
+    // Austin, Texas Locations //
+    ['<strong>1618 Asian Fusion</strong></br>1618 E Riverside Dr, Austin, TX 78741</br>Phone: (512) 462-9999</br><a href="https://1618asianfusion.com/" target="_blank">Visit Website</a>', 30.2454072, -97.7326578, 10],
+    ['<strong>Jewboy Burgers</strong></br>5111 Airport Blvd, Austin, TX 78751</br>Phone: (512) 291-3358</br><a href="http://www.jewboyburgers.com/" target="_blank">Visit Website</a>', 30.3127454, -97.7172342, 11],
+    ['<strong>Bird Bird Biscuit</strong></br>2701 Manor Rd, Austin, TX 78722</br>Phone: (512) 761-4922</br><a href="https://www.birdbirdbiscuit.com/" target="_blank">Visit Website</a>', 30.2849389, -97.7161816, 12],
+    ['<strong>Terry Black&prime;s Barbecue</strong></br>1003 Barton Springs Rd, Austin, TX 78704</br>Phone: (512) 394-5899</br><a href="http://terryblacksbbq.com/" target="_blank">Visit Website</a>', 30.2597006, -97.7569947, 13],
+    // Houston, Texas Locations //
+    ['<strong>Hearsay Market Square</strong></br>218 Travis St, Houston, TX 77002</br>Phone: (713) 225-8079</br><a href="http://hearsaygastrolounge.com/" target="_blank">Visit Website</a>', 29.763059, -95.3638819, 14],
+    ['<strong>La Lucha</strong></br>1801 N Shepherd Dr #A, Houston, TX 77008</br>Phone: (713) 955-4765</br><a href="http://laluchatx.com/" target="_blank">Visit Website</a>', 29.8019345, -95.4131602, 15],
+    ['<strong>BB&prime;s Tex-Orleans</strong></br>2701 White Oak Dr, Houston, TX 77009</br>Phone: (713) 868-8000</br><a href="http://bbstexorleans.com/" target="_blank">Visit Website</a>', 29.7817876, -95.389088, 16],
+    ['<strong>The Breakfast Klub</strong></br>3711 Travis St, Houston, TX 77002</br>Phone: (713) 528-8561</br><a href="http://www.thebreakfastklub.com/" target="_blank">Visit Website</a>', 29.7384748, -95.3826141, 17],
+    // San Antonio, Texas Locations //
+    ['<strong>Tlahco Mexican kitchen</strong></br>6702 San Pedro Ave, San Antonio, TX 78216</br>Phone: (210) 455-0135</br><a href="http://www.tlahcokitchen.com/" target="_blank">Visit Website</a>', 29.5005926, -98.5010564, 18],
+    ['<strong>Wild Goji Restaurant & Bar</strong></br>7115 Blanco Rd #110, San Antonio, TX 78216</br>Phone: (210) 277-0638</br><a href="http://www.wildgojisatx.com/" target="_blank">Visit Website</a>', 29.5227168, -98.5086765, 19],
+    ['<strong>Momo House San Antonio (Nepali Style Dumplings)</strong></br>4447 De Zavala Rd, San Antonio, TX 78249</br>Phone: (210) 492-1711</br><a href="https://www.facebook.com/pages/category/Fast-Food-Restaurant/Momo-House-Nepali-Style-Dumplings-102201771323097/" target="_blank">Visit Website</a>', 29.5714782, -98.5762219, 20],
+    ['<strong>Papas Burgers "In God We Trust"</strong></br>6900 San Pedro Ave #107, San Antonio, TX 78216</br>Phone: (210) 781-9171</br><a href=https://www.papasburgerssatx.com/" target="_blank">Visit Website</a>', 29.5046251, -98.5007432, 20],
+  ];
+
+  var attractionLocations = [
+    // Dallas, Texas Locations //
+    ['<strong>Six Flags Over Texas</strong></br>2201 E Road to Six Flags St, Arlington, TX 76011</br>Phone: (817) 640-8900</br><a href="https://www.papasburgerssatx.com/" target="_blank">Visit Website</a>', 32.7571699, -97.0693937, 1],
+    ['<strong>Ripley&prime;s Believe It or Not!</strong></br>601 E Palace Pkwy, Grand Prairie, TX 75050</br>Phone: (972) 263-2391</br><a href="http://www.ripleys.com/grandprairie" target="_blank">Visit Website</a>', 32.760546, -97.005898, 2],
+    ['<strong>Jurassic World The Exhibition</strong></br>5752 Grandscape Blvd, The Colony, TX 75056</br><a href="mailto:JWE@roundroomlive.com">Email Us</a></br><a href="https://jurassicworldexhibition.com/" target="_blank">Visit Website</a>', 33.0736499, -96.8645916, 3],
+    ['<strong>Perot Museum of Nature and Science</strong></br>2201 N Field St, Dallas, TX 75201</br>Phone: (214) 428-5555</br><a href="https://www.perotmuseum.org/" target="_blank">Visit Website</a>', 32.7869471, -96.8087659, 4],
+    ['<strong>Oswald Rooming House Museums</strong></br>1026 N Beckley Ave, Dallas, TX 75203</br>Phone: (469) 261-7806</br><a href="https://www.jfkdiscoverytour.com/" target="_blank">Visit Website</a>', 32.7558181, -96.8248536, 5],
+    // Fort Worth, Texas Locations //
+    ['<strong>American Airlines CR Smith Museum</strong></br>4601 Hwy 360, Fort Worth, TX 76155</br>Phone: (682) 278-9085</br><a href="http://www.crsmithmuseum.org/" target="_blank">Visit Website</a>', 32.8332941, -97.0658934, 6],
+    ['<strong>National Cowgirl Museum & Hall of Fame</strong></br>1720 Gendy St, Fort Worth, TX 76107</br>Phone: (817) 336-4475</br><a href="http://www.cowgirl.net/" target="_blank">Visit Website</a>', 32.7433581, -97.3708297, 7],
+    ['<strong>Fort Worth Stockyards National Historic District</strong></br>131 E Exchange Ave, Fort Worth, TX 76164</br>Phone: (817) 626-7921</br><a href="http://www.fortworthstockyards.org/" target="_blank">Visit Website</a>', 32.7892799, -97.3492091, 8],
+    ['<strong>Fort Worth Botanic Garden</strong></br>3220 Botanic Garden Blvd, Fort Worth, TX 76107</br>Phone: (817) 463-4160</br><a href="https://fwbg.org/" target="_blank">Visit Website</a>', 32.7409733, -97.3650966, 9],
+    // Austin, Texas Locations //
+    ['<strong>Texas Toy Museum</strong></br>314 1/2 Congress Ave, Austin, TX 78701</br>Phone: (512) 220-9582</br><a href="https://austintoymuseum.org/" target="_blank">Visit Website</a>', 30.2657778, -97.7461622, 10],
+    ['<strong>LBJ Presidential Library</strong></br>2313 Red River St, Austin, TX 78705</br>Phone: (512) 721-0200</br><a href="http://www.lbjlibrary.org/" target="_blank">Visit Website</a>', 30.2858605, -97.7314431, 11],
+    ['<strong>Texas State Capitol</strong></br>1100 Congress Ave, Austin, TX 78701</br>Phone: (512) 463-4630</br><a href="http://www.tspb.texas.gov/prop/tc/tc/capitol.html" target="_blank">Visit Website</a>', 30.2746698, -97.7425392, 12],
+    ['<strong>Westcave Outdoor Discovery Center</strong></br>24814 Hamilton Pool Rd, Round Mountain, TX 78663</br>Phone: (830) 825-3442</br><a href="http://www.westcave.org/" target="_blank">Visit Website</a>', 30.3373736, -98.1430911, 13],
+    // Houston, Texas Locations //
+    ['<strong>The Houston Museum of Natural Science</strong></br>5555 Hermann Park Dr, Houston, TX 77030</br>Phone: (713) 639-4629</br><a href="http://www.hmns.org/" target="_blank">Visit Website</a>', 29.722105, -95.3918027, 14],
+    ['<strong>Space Center Houston</strong></br>1601 E NASA Pkwy, Houston, TX 77058</br>Phone: (281) 283-4755</br><a href="https://www.spacecenter.org/" target="_blank">Visit Website</a>', 29.5518366, -95.1002931, 15],
+    ['<strong>Lone Star Flight Museum</strong></br>11551 Aerospace Ave, Houston, TX 77034</br>Phone: (346) 708-2517</br><a href="http://www.lonestarflight.org/" target="_blank">Visit Website</a>', 29.6042079, -95.1768777, 16],
+    ['<strong>The Museum of Fine Arts, Houston</strong></br>1001 Bissonnet St, Houston, TX 77005</br>Phone: (713) 639-7300</br><a href="http://www.mfah.org/" target="_blank">Visit Website</a>', 29.741511, -95.4212939, 17],
+    // San Antonio, Texas Locations //
+    ['<strong>City Sightseeing San Antonio,</br> 111 Alamo Plaza, Welcome Center</strong></br>111 Alamo Plaza, San Antonio, TX 78205</br>Phone: (210) 224-8687</br><a href="http://www.citysightseeingsanantonio.com/" target="_blank">Visit Website</a>', 29.4240572, -98.4895292, 18],
+    ['<strong>SeaWorld San Antonio</strong></br>10500 Sea World Dr, San Antonio, TX 78251</br>Phone: (210) 520-4732</br><a href="https://seaworld.com/san-antonio/" target="_blank">Visit Website</a>', 29.458373, -98.70153, 19],
+    ['<strong>Six Flags Fiesta Texas</strong></br>17000 W I-10, San Antonio, TX 78257</br>Phone: (210) 697-5050</br><a href="https://www.sixflags.com/fiestatexas" target="_blank">Visit Website</a>', 29.5991202, -98.6127494, 20],
+    ['<strong>The Buckhorn Saloon & Museum</strong></br>318 E Houston St, San Antonio, TX 78205</br>Phone: (210) 247-4000</br><a href="https://www.buckhornmuseum.com/cafe-saloon" target="_blank">Visit Website</a>', 29.426206, -98.4911169, 21]
   ];
 
   var center = {
@@ -130,13 +179,28 @@ function initMap() {
   // For the Food listings page
   for (i = 0; i < foodLocations.length; i++) {
     marker = new google.maps.Marker({
-      position: new google.maps.LatLng(foodLocations[i][1], foodLocations[i][2], foodLocations[i][3], foodLocations[i][4], foodLocations[i][5]),
+      position: new google.maps.LatLng(foodLocations[i][1], foodLocations[i][2], foodLocations[i][3], foodLocations[i][4], foodLocations[i][5], foodLocations[i][6], foodLocations[i][7], foodLocations[i][8], foodLocations[i][9], foodLocations[i][10], foodLocations[i][11], foodLocations[i][12], foodLocations[i][13], foodLocations[i][14], foodLocations[i][15], foodLocations[i][16], foodLocations[i][17], foodLocations[i][18], foodLocations[i][19], foodLocations[i][20], foodLocations[i][21]),
       map: map,
     });
 
     google.maps.event.addListener(marker, 'click', (function(marker, i) {
       return function() {
         infowindow.setContent(foodLocations[i][0]);
+        infowindow.open(map, marker);
+      }
+    })(marker, i));
+  }
+
+  // For the Attractions listings page
+  for (i = 0; i < attractionLocations.length; i++) {
+    marker = new google.maps.Marker({
+      position: new google.maps.LatLng(attractionLocations[i][1], attractionLocations[i][2], attractionLocations[i][3], attractionLocations[i][4], attractionLocations[i][5], attractionLocations[i][6], attractionLocations[i][7], attractionLocations[i][8], attractionLocations[i][9], attractionLocations[i][10], attractionLocations[i][11], attractionLocations[i][12], attractionLocations[i][13], attractionLocations[i][14], attractionLocations[i][15], attractionLocations[i][16], attractionLocations[i][17], attractionLocations[i][18], attractionLocations[i][19], attractionLocations[i][20], attractionLocations[i][21]),
+      map: map,
+    });
+
+    google.maps.event.addListener(marker, 'click', (function(marker, i) {
+      return function() {
+        infowindow.setContent(attractionLocations[i][0]);
         infowindow.open(map, marker);
       }
     })(marker, i));
